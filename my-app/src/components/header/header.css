@@ -1,0 +1,9 @@
+header{
+    background: rgba(18, 153, 0, 0.884);
+    height: 180px;
+    display: flex;
+}
+
+h1{
+    color: black;
+}

@@ -1,0 +1,10 @@
+main{
+    background: rgba(216, 82, 82, 0.884);
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+h1{
+    color: black;
+}
