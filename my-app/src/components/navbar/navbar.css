@@ -1,0 +1,9 @@
+navbar{
+    background: rgba(206, 55, 0, 0.884);
+    height: 80px;
+    display: flex;
+}
+
+h1{
+    color: black;
+}
