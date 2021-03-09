@@ -1,9 +1,30 @@
 navbar{
-    background: rgba(206, 55, 0, 0.884);
-    height: 80px;
+    background: rgba(255, 255, 255, 0.884);
+    height: 50px;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-around;
+    padding: 30px;
+
 }
 
-h1{
-    color: black;
+
+.nav{
+    color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    border-style: none;
+    background-color: #fff;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.nav:hover{
+    color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    background: #F8798A;
+    border-radius: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+
 }
