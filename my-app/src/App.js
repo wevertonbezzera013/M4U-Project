@@ -7,7 +7,7 @@ import Header from './components/header/header'
 
 function App() {
   return (
-    <div>
+    <div className="final">
       <NavBar/>
       <Header/>
       <Main/>
