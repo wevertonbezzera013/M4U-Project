@@ -1,0 +1,231 @@
+main {
+    background-color: #EFFAF9;
+    padding-top: 8%;
+    height: auto;
+  }
+
+  .tituloForm{
+    text-align: left;
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+    font-family:'Spartan', sans-serif;
+    font-weight:bolder;
+    font-size: 35px;
+    line-height: 155.8%;
+    color: #F8798A;
+  }
+  
+  .secao_corpo_principal_cadastro{
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+    display:flex;
+  }
+  
+  .corpo__principal_cadastro{
+    background-color: #FFFFFF;
+    width: 50%;
+    height: auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px auto;
+  
+  }
+
+/* FORM */
+form{
+  width: 90%;
+}
+
+  input[type=text]{
+    border-radius: 100px !important;
+    box-shadow: none !important;
+    background-color: #F8798A !important;
+    color: white;
+    font-family: 'Spartan';
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  input[type=email]{
+    border-radius: 100px !important;
+    box-shadow: none !important;
+    background-color: #F8798A !important;
+    color: white;
+    font-family: 'Spartan';
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  input[type=password]{
+    border-radius: 100px !important;
+    box-shadow: none !important;
+    background-color: #F8798A !important;
+    color: white;
+    font-family: 'Spartan';
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  ::placeholder {
+    color: white !important;
+    padding: 5%;
+    font-family: 'Spartan';
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+
+/* :required{
+  background-color: #D26A7E;
+} */
+
+  .labelPequeno{
+    width: 100%;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+  }
+
+
+  .labelTamanho{
+    width: 90%;
+    margin: 0 2px;
+  }
+
+  .labelNumero{
+    width: 30%;
+  }
+
+  .labelComplemento{
+    width: 65%;
+  }
+
+  .textoForm{
+      font-family: 'Spartan';
+      font-size: 18px;
+      font-weight: 800;
+      color: #F8798A;
+      margin-top: 5%;
+      margin-bottom: 2%;
+  }
+
+  .imgCartaoCadastro{
+    margin-bottom: -2%;
+  }
+  
+  #buttonFormCadastro{
+    width: 100%;
+    height: 25%;
+    justify-self:center;
+    margin-bottom: 5px;
+    background-color: #F8798A;
+    color:#FFFFFF;
+    border: none;
+    padding: 10px;
+    font-family:'Spartan', sans-serif;
+    font-weight: 1000;
+    border-radius: 100px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  #buttonFormCadastro:hover{
+    background-color: #D26A7E;
+  }
+
+  .img_corpo__form{
+    width: 30%;
+    margin-right: 3%;
+    
+  }
+
+  /* MEDIA QUERIES */
+
+@media only screen and (max-width: 425px) {
+  .tituloForm{
+    text-align: left;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    font-family:'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: auto;
+    color: #F8798A;
+  }
+
+  .secao_corpo_principal_cadastro{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 50px;
+    justify-content: center;
+    
+  }
+
+ .img_corpo__form{
+  width: 80%;
+  margin: 0 auto;
+}
+  
+  .corpo__principal_cadastro{
+    background-color: #FFFFFF;
+    width: 80%;
+    height: auto;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+  
+  }
+
+  form{
+    height: auto;
+    width: 100%;
+  }
+
+  .labelPequeno{
+    width: 100%;
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .labelTamanho{
+    width: 100% ;
+  }
+
+  .textoForm{
+    font-family: 'Spartan';
+    font-size: 14px;
+    font-weight: 800;
+    color: #F8798A;
+    line-height: 160%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.imgCartaoCadastro{
+  margin-bottom: -2%;
+  width: 25px;
+}
+
+::placeholder {
+  color: white !important;
+  padding: 5%;
+  font-family: 'Spartan';
+  font-size: 14px;
+  font-weight: 800;
+}
+
+}

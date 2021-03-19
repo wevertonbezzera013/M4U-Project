@@ -1,0 +1,259 @@
+main {
+    background-color: #FFEEF0;
+    padding-top: 8%;
+    height: auto;
+  }
+  
+  .img_recarga{
+    width: 30%;
+    margin-left: 2%;
+    
+  }
+  
+  .secao_corpo_principal_recarga1{
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+    display:flex;
+  }
+  
+  .corpo__principal_recarga{
+    background-color: #FFFFFF;
+    width: 30%;
+    height: 70% !important;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin: 5% auto;
+  
+  }
+
+/* FORM */
+
+form{
+  width: 90%;
+}
+
+.tituloRecarga{
+  text-align: left;
+  width: 80%;
+  height: auto;
+  margin-bottom: 5%;
+  font-family:'Spartan', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 155.8%;
+  color: #609FA0;
+  text-transform: uppercase;
+}
+
+  input[type=text]{
+    border-radius: 100px !important;
+    box-shadow: none !important;
+    background-color: #609FA0 !important;
+    color: white;
+    font-family: 'Spartan';
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  input[type=email]{
+    border-radius: 100px !important;
+    box-shadow: none !important;
+    background-color: #609FA0 !important;
+    color: white;
+    font-family: 'Spartan';
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  input[type=password]{
+    border-radius: 100px !important;
+    box-shadow: none !important;
+    background-color: #609FA0 !important;
+    color: white;
+    font-family: 'Spartan';
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  ::placeholder {
+    color: white !important;
+    padding: 5%;
+    font-family: 'Spartan';
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+/* :required{
+  background-color: #D26A7E;
+} */
+
+  .labelPequenoRecarga{
+    width: 100%;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+  }
+
+  .labelTelefone{
+    width: 30%;
+  }
+
+  .labelCartoes{
+    width: 48%;
+  }
+
+  .imgCartaoRecarga{
+    margin-bottom: -1%;
+  }
+
+  .textoFormRecarga{
+      font-family: 'Spartan';
+      font-size: 18px;
+      font-weight: 800;
+      color: #609FA0;
+      margin-top: 10%;
+      margin-bottom: 2%;
+      justify-content: center;
+  }
+  
+  #buttonFormRecarga{
+    width: 100%;
+    height: 25%;
+    justify-self:center;
+    margin-bottom: 5px;
+    background-color: #609FA0;
+    color:#FFFFFF;
+    border: none;
+    padding: 10px;
+    font-family:'Spartan', sans-serif;
+    font-weight: 1000;
+    border-radius: 100px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  #buttonFormRecarga:hover{
+    background-color: #547676;
+  }
+
+ 
+
+  /* MEDIA QUERIES */
+
+  @media only screen and (min-width: 768px){
+    .corpo__principal_recarga{
+      background-color: #FFFFFF;
+      width: 80%;
+      height: auto;
+      border-radius: 50px;
+      display: flex;
+      margin-bottom: 30px;
+      margin-bottom: 30px;
+      margin-right: 50px;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .img_recarga{
+      width: 35%;
+    }
+
+    input[type=text]{
+      border-radius: 100px !important;
+      box-shadow: none !important;
+      background-color: #609FA0 !important;
+      color: white;
+      font-family: 'Spartan';
+      font-size: 10px;
+      font-weight:700;
+    }
+  }
+
+@media only screen and (max-width: 425px){
+  .secao_corpo_principal_recarga1{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column-reverse;
+    top: 50px;
+    justify-content: center;
+    
+  }
+
+ .img_recarga{
+  width: 80%;
+  margin: 0 auto;
+
+}
+  
+  .corpo__principal_recarga{
+    background-color: #FFFFFF;
+    width: 80%;
+    height: auto;
+    border-radius: 50px;
+    display: flex;
+    margin: 60px auto 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+  
+  }
+
+  form{
+    height: auto;
+    width: 100%;
+  }
+
+  .tituloRecarga{
+    text-align: left;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    font-family:'Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: auto;
+    color: #609FA0;
+  }
+
+  .labelPequenoRecarga{
+    width: 100%;
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .labelTamanho{
+    width: 100% ;
+  }
+
+  .textoFormRecarga{
+    font-family: 'Spartan';
+    font-size: 14px;
+    font-weight: 800;
+    color: #609FA0;
+    line-height: 160%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.imgCartaoRecarga{
+  margin-bottom: -2%;
+  width: 25px;
+}
+
+::placeholder {
+  color: white !important;
+  padding: 5%;
+  font-family: 'Spartan';
+  font-size: 14px;
+  font-weight: 800;
+}
+
+}
