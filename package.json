@@ -1,0 +1,23 @@
+{
+  "name": "M4U-Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wevertonbezzera013/M4U-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wevertonbezzera013/M4U-Project/issues"
+  },
+  "homepage": "https://github.com/wevertonbezzera013/M4U-Project#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}

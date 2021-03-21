@@ -309,6 +309,7 @@ main {
       justify-content: space-between;
       padding-left: 8%;
       padding-right: 8%;
+      flex-wrap: wrap;
 
   }
 
@@ -320,6 +321,7 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 2%;
   }
 
   .imgTime{
