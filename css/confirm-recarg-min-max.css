@@ -4,103 +4,58 @@
     top: 0;
     width: 100%;
   }
-
-  /*HEADER*/
-  .header-nav{
-    width: 100%;
-    top:0px;
-  }
-
-  nav{
-    background-color:#FFFFFF !important;
-  }
-
-  #logo{
-    width: 100px;
-    height: 100px;
-    bottom: -25%;
-  }
-
-  #menu-responsive{
-    width: 30px;
-    height: 30px;
-  }
-
-  ul li a{
-    text-decoration: none;
-    font-family: 'Spartan';
-    font-size: 18px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: #F8798A !important;
-  }
-
-  .container-nav {
-    height: 100%;
-    display: flex ;
-    flex-direction: column;
-    justify-content: center;
-    align-items:stretch;
-  }
-
-  .sidenav{
-    width: 50% !important;
-  }
-/*FIM HEADER */
-
-
-  /* MAIN */
   
-  .secao_corpo_principal{
+  .secao_corpo_principalConfirmRecarga{
     background-color: #FFEEF0;
     width: 100%;
     height: auto;
-    padding: 30px 10px 0 10px;
+    padding: 30px 10px 0 px;
     display: flex;
-    justify-content: center;
   }
-  .container-principal{
+  .container-principalConfirmRecarga{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     justify-content: center;
     align-items: center;
   }
-  .corpo__principal{
+  .corpo__principalConfirmRecarga{
     border-radius: 0px;
     text-align: center;
-    width: 90%;
+    width: 70%;
     height: auto;
     font-family:'Spartan', sans-serif;
     font-weight: 800;
     border-radius: 50px;
     background-color:#FFFFFF;
-    margin: auto;
+    margin: 5%;
   }
-  .container_principal{
+  .container_principalConfirmRecarga{
     width: 100%;
-    height: 100%;
+    height: auto;
     justify-content: space-around;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 30px 10px 30px 10px;
+    padding: 30px 10px 30px 5px;
   } 
-/*CORPO MAIN*/
-  .items_label{
+
+  .items_labelConfirmRecarga{
     background-color: #609FA0;
     border-radius: 50px;
-    width: 40%  !important;
-    height:100%;
+    width: 90%;
+    height:auto;
     font-size: 20px;
     color:#FFFFFF;
     text-align: center;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 10px;
   }
 
-  #button_final_compra{
+  #button_final_ConfirmRecarga{
     width: 90%;
     height: auto;
     justify-self:center;
@@ -113,23 +68,17 @@
     font-size: 25px;
   }
 
-  #button_final_compra:hover{
+  #button_final_ConfirmRecarga:hover{
     background-color: #547676;
   }
 
-  picture{
-    width: auto;
-    text-align: center;
-    height: auto;
+  
+
+  #img_corpo__principalConfirmRecarga {
+    width: 100%;
+    margin-top: 40%;
   }
 
-  #img_corpo__principal {
-    width: 50%;
-    height: 100%;
-    left:0%;
-    top: 0%;
-    margin-left: 0%;
-  }
 
   /*MODAL CONFIRMAÇÃO*/  
   .modal-completo{
@@ -281,10 +230,4 @@
   margin-bottom: 10px;
   font-weight: normal;
 }
-  /*FOOTER*/
-  #footer-easy{
-    height: auto;
-    text-align: center;
-    padding: 5px 5px 0px 5px;
-    bottom: 0px;
-  }
+

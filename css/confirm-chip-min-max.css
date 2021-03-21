@@ -8,57 +8,24 @@
     padding-top: 30px;
     width: 100%;
   }
-  /*HEADER*/
-  .header-nav{
-    width: 100%;
-    top:0px;
-  }
-  nav{
-    background-color:#FFFFFF !important;
-  }
-  ul li a{
-    text-decoration: none;
-    font-family: 'Spartan';
-    font-size: 18px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: #F8798A !important;
-  }
-
-  #logo{
-    width: 100px;
-    height: 100px;
-    bottom: -25%;
-  }
-  #menu-responsive{
-    width: 30px;
-    height: 30px;
-  }
-  .container-nav {
-    height: 100%;
-  }
-
-  .sidenav{
-    width: 50% !important;
-  }
   
-  .secao_corpo_principal{
+  .secao_corpo_principalConfirmChip{
     height: auto;
     width: 100%;
   }
-  #texto-chip{
+  #texto-ConfirmChip{
     position: relative;
-    width: 50%;
-    font-size: 35px;
+    width: 70%;
+    font-size: 45px;
     color:#F8798A;
-    left: 18%;
-    top:10%;
+    left: 10%;
+    margin-top: 10%;
     font-weight: bold;
     line-height: 45px;
     font-family: 'Spartan', sans-serif;
     margin-bottom: 5%;
   }
-  .container-principal{
+  .container-principalConfirmChip{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -66,52 +33,56 @@
     justify-content: center;
     align-items: center;
   }
-  .corpo__principal{
+  .corpo__principalConfirmChip{
     border-radius: 0px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     height: auto;
     font-family:'Spartan', sans-serif;
     font-weight: 800;
     border-radius: 50px;
     background-color:#FFFFFF;
-    margin: auto;
+    margin: 0 auto;
   }
-  .container_principal{
+  .container_principalConfirmChip{
     width: auto;
     height: auto;
     justify-content: space-around;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     padding: 30px 10px 30px 10px;
   } 
 /*CORPO MAIN*/
-  .items_label{
+  .items_labelConfirmChip{
     background-color: #F8798A;
     border-radius: 50px;
-    width: 40%  !important;
+    width: 90%  !important;
     height:100%;
     font-size: 20px;
     color:#FFFFFF;
     text-align: center;
     margin-bottom: 20px;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
   }
-  #recarga-chip{
+  #recarga-chipConfirmChip{
     width: 90% !important;
   }
-  #recarga-cartao{
+  #recarga-cartaoConfirmChip{
     width: 50% !important;
   }
-  #recarga-valid{
+  #recarga-validConfirmChip{
     width: 30% !important;
   }
 
-  #button_final_compra:hover{
-    background-color: #D26A7E;
-  }
-  #button_final_compra{
+  
+  #button_final_ConfirmChip{
     width: 90%;
     height: auto;
     justify-self:center;
@@ -123,12 +94,18 @@
     border-radius: 50px;
     font-size: 25px;
   }
+
+  #button_final_ConfirmChip:hover{
+    background-color: #D26A7E;
+  }
+
   picture{
     height: auto;
   }
-  #img_corpo__principal {
-    width: 100%;
+  #img_corpo__principalConfirmChip{
+    width: 80%;
     height: 100%;
+    margin-top: 10%;
     
   }
 
