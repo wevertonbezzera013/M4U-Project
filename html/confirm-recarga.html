@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-  <link rel="stylesheet" href="../css/reset.css">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+
+  
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="../css/confirm-recarg-min-1024.css" media="screen and (min-width:1024px)"
-    type="text/css" />
-  <link rel="stylesheet" href="../css/confirm-recarg-max-767.css" media="screen and (max-width:767px)"
-    type="text/css" />
-  <link rel="stylesheet" href="../css/confirm-recarg.min-max.css"
-    media="only screen and (min-width: 768px) and (max-width: 1023px)" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap" rel="stylesheet">
+ 
+  <!-- css padoes -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/pgMod.css">
+
+  <!-- CSS Responsividade -->
+  <link rel="stylesheet" href="../css/confirm-recarg-min-1024.css" media="screen and (min-width:1024px)" type="text/css" />
+  <link rel="stylesheet" href="../css/confirm-recarg.min-max.css" media="only screen and (min-width: 768px) and (max-width: 1023px)" type="text/css" />
+  <link rel="stylesheet" href="../css/confirm-recarg-max-767.css" media="screen and (max-width:767px)" type="text/css" />
+
+  <!-- Biblioteca Materialize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 
 
   <title>Confirmação Recarga</title>
+
 </head>
 
 <body>
@@ -32,12 +36,12 @@
         <div class="container-nav">
           <img src="../img/logo.svg" id="logo" class="brand-logo"></img>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img
-                src="../svg/menu-responsive.svg" id="menu-responsive" alt"menu-hamburguer"></i></a>
+                src="../img/menu-responsive.svg" id="menu-responsive" alt"menu-hamburguer"></i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="" data-target="modal-login" class="modal-trigger">RECARGA</a></li>
+            <li><a >RECARGA</a></li>
             <li><a href="badges.html">E-CHIP</a></li>
             <li><a href="collapsible.html">QUEM SOMOS</a></li>
-            <li><a href="mobile.html">EQUIPE</a></li>
+            <li><a href="" data-target="modal-login" class="modal-trigger">LOGIN</a></li>
           </ul>
         </div>
       </div>
@@ -48,7 +52,7 @@
     <li><a class="sidenav-trigger" href="sass.html">RECARGA</a></li>
     <li><a class="sidenav-trigger" href="badges.html">E-CHIP</a></li>
     <li><a class="sidenav-trigger" href="collapsible.html">QUEM SOMOS</a></li>
-    <li><a class="sidenav-trigger" href="mobile.html">EQUIPE</a></li>
+    <li><a class="sidenav-trigger" href="" data-target="modal-login">LOGIN</a></li>
   </ul>
 
 
@@ -57,7 +61,7 @@
       <div class="container-principal">
         <div class=corpo__principal>
           <div class=container_principal>
-            <label class="items_label" id="recarga1">R$ 25,00</label>
+            <label class="items_label" id="recarga">R$ 25,00</label>
             <label class="items_label">Telefone</label>
             <label class="items_label">Cartão</label>
             <label class="items_label">Validade</label>
@@ -66,7 +70,7 @@
           </div>
         </div>
         <picture>
-          <img id="img_corpo__principal" src="../img/ilustraPrancheta.svg">
+          <img id="img_corpo__principal" src="../img/Mask Group.svg">
         </picture>
       </div>
     </section>
@@ -138,6 +142,7 @@
   </section>
   <script type="text/javascript" src="../js/open-modal.js"></script>
   <script type="text/javascript" src="../js/script.js"></script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>

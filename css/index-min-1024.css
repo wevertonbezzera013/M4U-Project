@@ -17,10 +17,7 @@ main {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5%;
-  
+    margin-bottom: 5%;  
   }
 
   .corpoRecargaIndex{
@@ -30,6 +27,8 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-right: 3%;
+      margin-left: -3%;
   }
 
   .tituloPrincipal{
@@ -54,7 +53,7 @@ main {
   #buttonValoresRecarga{
     width:100%;
     height: 100%;
-    background-color: #F8798A;
+    background-color: #609FA0;
     border-radius: 100px;
     margin-bottom: 10%;
     border: none;
@@ -62,7 +61,7 @@ main {
     
   }
 
-  .teste{
+  .tamanhoBotoes{
     width: 45%;
     margin-bottom: 10px;
   }
@@ -86,11 +85,16 @@ main {
   }
 
   #buttonValoresRecarga:hover{
-    background-color: #D26A7E;
+    background-color: #547676;
   }
 
   .imgSectionRecarga{
     width: 50%;
+  }
+
+  .tamanhoImgRecarga{
+    margin-left: -30%;
+    width: 120%;
   }
 
   /* Seção E-chip */
@@ -111,8 +115,10 @@ main {
   
   }
 
-  .imgEchip{
-    width: 50%;
+  .imgEchipIndex{
+    width: 27%;
+    margin-left: 5%;
+    margin-top: 3%;
   }
 
   .corpoEchipIndex{
@@ -145,7 +151,7 @@ main {
   }
 
   #buttonEchip{
-    width: 40%;
+    width: 60%;
     height: 25%;
     justify-content: right;
     background-color: #F8798A;
@@ -155,9 +161,9 @@ main {
     font-family:'Spartan', sans-serif;
     font-weight: 1000;
     border-radius: 100px;
-    font-size: 16px;
+    font-size: 25px;
     text-transform: uppercase;
-    margin-left: 50%;
+    margin-left: 30%;
     margin-top: 5%;
   }
 
@@ -202,18 +208,20 @@ main {
   }
 
   .textoQuemSomos{
-    width: 75%;
+    width: 65%;
     height: auto;
     font-family:'Spartan', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     line-height: 155.8%;
     margin-left: 15%;
     color: rgba(0, 0, 0, 0.8);
   }
 
-  .imgEchip{
-    width: 50%;
+  .imgQuemSomos{
+    width: 40%;
+    margin-top: 7%;
+    margin-right: 3%;
   }
 
 /* Seção EQUIPE */
@@ -235,8 +243,9 @@ main {
       }
     
 .imgEquipe{
-        width: 50%;
-      }
+    width: 50%;
+    margin-top: 2%;
+}
     
 .corpoEquipe{
           display: flex;
@@ -323,6 +332,8 @@ main {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
+    margin-top: 10%;
+    margin-bottom: 5%;
   }
 
   .funcaoEquipe{
@@ -330,102 +341,12 @@ main {
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
+    margin-bottom: 5%;
   }
 
   .imgContato{
       justify-items: center;
-  }
-
-
-  /* Medias Querys */
-
-  /* Tablet */
-  @media only screen and (max-width: 768px) {
-    .secao_principal_recarga_index{
-      vertical-align: bottom;
-      width: 100%;
-      height: auto;
-      display:flex;
-    }
-    
-    .corpo_principal_recarga_index{
-      background-color: #FFFFFF;
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       margin-bottom: 5%;
-    
-    }
-  
-    .corpoRecargaIndex{
-        display: flex;
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-  
-    .tituloPrincipal{
-      text-align: left;
-      width: 70%;
-      height: auto;
-      font-family:'Spartan', sans-serif;
-      font-size: 35px;
-      line-height: 145.8%;
-      color: rgba(0, 0, 0, 0.8);
-    }
-  
-    #buttonsRecarga{
-      border: 1px solid red;
-      width: 100%;  
-      display: flex;
-      flex-direction: row;
-      justify-content: left;
-      flex-wrap: wrap;
-      padding:2px;
-      
-    }
-  
-    #buttonValoresRecarga{
-      width: 40%;
-      height: 40%;
-      background-color: #F8798A;
-      border-radius: 100px;
-      margin-bottom: 10%;
-      border: none;
-      justify-self:left;
-      padding: 2%;
-      
-    }
-  
-    .valores{
-      color:#FFFFFF;
-      font-family:'Anton', sans-serif;
-      font-weight: 1000;
-      font-size: 45px;
-      text-transform: uppercase;
-    }
-  
-    .bonus{
-      font-family: 'Spartan';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 15px;
-      line-height: 17px;
-      color: #FFFFFF;
-      margin-top: 4%;
-    }
-  
-    #buttonValoresRecarga:hover{
-      background-color: #D26A7E;
-    }
-  
-    .imgSectionRecarga{
-      width: 50%;
-    }
-
   }
+  
+ 

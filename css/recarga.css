@@ -1,13 +1,11 @@
 main {
     background-color: #FFEEF0;
-    padding-top: 8%;
-    height: auto;
   }
   
   .img_recarga{
     width: 30%;
-    margin-left: 2%;
-    
+    margin-left: 3%;
+    margin-top: 5%;
   }
   
   .secao_corpo_principal_recarga1{
@@ -19,14 +17,14 @@ main {
   
   .corpo__principal_recarga{
     background-color: #FFFFFF;
-    width: 30%;
-    height: 70% !important;
+    width: 50%;
+    height: 90% !important;
     border-radius: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 1%;
-    margin: 5% auto;
+    margin-top: 10%;
+    margin-left: 10%;
   
   }
 
@@ -49,27 +47,7 @@ form{
   text-transform: uppercase;
 }
 
-  input[type=text]{
-    border-radius: 100px !important;
-    box-shadow: none !important;
-    background-color: #609FA0 !important;
-    color: white;
-    font-family: 'Spartan';
-    font-size: 16px;
-    font-weight: 800;
-  }
-
-  input[type=email]{
-    border-radius: 100px !important;
-    box-shadow: none !important;
-    background-color: #609FA0 !important;
-    color: white;
-    font-family: 'Spartan';
-    font-size: 16px;
-    font-weight: 800;
-  }
-
-  input[type=password]{
+  .input-recarga{
     border-radius: 100px !important;
     box-shadow: none !important;
     background-color: #609FA0 !important;
@@ -139,31 +117,49 @@ form{
   #buttonFormRecarga:hover{
     background-color: #547676;
   }
-
  
 
   /* MEDIA QUERIES */
 
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
     .corpo__principal_recarga{
       background-color: #FFFFFF;
-      width: 80%;
+      width: 100%;
       height: auto;
       border-radius: 50px;
       display: flex;
-      margin-bottom: 30px;
+      margin-top: 15%;
       margin-bottom: 30px;
       margin-right: 50px;
       justify-content: center;
       align-items: center;
-      padding: 15px;
+      padding: 8px;
     }
 
     .img_recarga{
       width: 35%;
+      margin-top: 16%;
     }
 
-    input[type=text]{
+    form{
+      width: 95%;
+    }
+    
+    .tituloRecarga{
+      text-align: left;
+      width: 80%;
+      height: auto;
+      margin-bottom: 5%;
+      font-family:'Spartan', sans-serif;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 155.8%;
+      color: #609FA0;
+      text-transform: uppercase;
+    }
+
+    
+    input-recarga{
       border-radius: 100px !important;
       box-shadow: none !important;
       background-color: #609FA0 !important;
@@ -172,21 +168,43 @@ form{
       font-size: 10px;
       font-weight:700;
     }
+
+    ::placeholder {
+      color: white !important;
+      padding: 5%;
+      font-family: 'Spartan';
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .imgCartaoRecarga{
+      width: 10%;
+      margin-bottom: -1%;
+    }
+  
+    .textoFormRecarga{
+        font-family: 'Spartan';
+        font-size: 16px;
+        font-weight: 800;
+        color: #609FA0;
+        margin-top: 10%;
+        margin-bottom: 2%;
+        justify-content: center;
+    }
   }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width:767px){
   .secao_corpo_principal_recarga1{
     width: 100%;
     height: auto;
     display:flex;
     flex-direction: column-reverse;
-    top: 50px;
     justify-content: center;
-    
+    margin-bottom: 10%;
   }
 
  .img_recarga{
-  width: 80%;
+  width: 55%;
   margin: 0 auto;
 
 }
@@ -197,12 +215,10 @@ form{
     height: auto;
     border-radius: 50px;
     display: flex;
-    margin: 60px auto 20px;
+    margin: 80px auto 20px;
     justify-content: center;
     align-items: center;
     padding: 15px;
-
-  
   }
 
   form{
@@ -212,9 +228,9 @@ form{
 
   .tituloRecarga{
     text-align: left;
-    width: 80%;
+    width: 90%;
     height: auto;
-    margin-left: 10%;
+    margin-left: 2%;
     font-family:'Spartan', sans-serif;
     font-weight: 800;
     font-size: 20px;
@@ -246,6 +262,7 @@ form{
 .imgCartaoRecarga{
   margin-bottom: -2%;
   width: 25px;
+  margin-left: 2%;
 }
 
 ::placeholder {
@@ -255,5 +272,7 @@ form{
   font-size: 14px;
   font-weight: 800;
 }
+
+
 
 }

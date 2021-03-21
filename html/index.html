@@ -8,7 +8,14 @@
 
   <link rel="stylesheet" href= "../css/reset.css">
   <link rel="stylesheet" href= "../css/pgMod.css">
-  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/modelLogin.css">
+
+  <!-- CSS DO INDEX + CSS PARA RESPONSIVO -->
+  <link rel="stylesheet" href="../css/index-min-1024.css" media="screen and (min-width:1024px)"
+  type="text/css" />
+  <link rel="stylesheet" href="../css/index-min-max.css" media="only screen and (min-width: 768px) and (max-width: 1023px)" type="text/css" />
+  <link rel="stylesheet" href="../css/index-max-767.css" media="screen and (max-width:767px)"
+  type="text/css" />
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;800&display=swap" rel="stylesheet">
@@ -39,7 +46,7 @@
                 <li><a   href="#click-recarga">recarga</a></li>
                 <li><a   href="#click-echip">e-chip</a></li>
                 <li><a   href="#click-quemSomos">quem somos</a></li>
-                <li><a   href="mobile.html">login</a></li>
+                <li><a   href="" data-target="modal-login" class="modal-trigger">login</a></li>
             </ul>
             </div>
         </div>
@@ -48,11 +55,11 @@
         
         <!-- Menu de navegação responsivo -->
         <ul class="sidenav right" id="mobile-demo">
-        <li><a   class="sidenav-trigger" href="#click-recarga">recarga</a></li>
-        <li><a   class="sidenav-trigger" href="#click-echip">e-chip</a></li>
-        <li><a  class="sidenav-trigger"  href="#click-quemSomos">quem somos</a></li>
-        <li><a  class="sidenav-trigger"  href="mobile.html">login</a></li>
-        </ul>
+            <li><a class="sidenav-trigger" href="index.html#click-recarga">RECARGA</a></li>
+            <li><a class="sidenav-trigger" href="index.html#click-echip">E-CHIP</a></li>
+            <li><a class="sidenav-trigger" href="index.html#click-quemSomos">QUEM SOMOS</a></li>
+            <li><a href="" data-target="modal-login" class="modal-trigger">LOGIN</a></li>
+          </ul>
     </header>
 
     <main>
@@ -63,15 +70,16 @@
                     <h1 class="tituloPrincipal">RECARREGUE E GANHE ATÉ <b>3 GB DE BÔNUS</b></h1>
 
                     <div id="buttonsRecarga">                         
-                        <a href="recarga.html" class="teste"><button id="buttonValoresRecarga"> <p class="valores">R$ 15 <p>&nbsp;</p> </button></a>
-                        <a href="recarga.html" class="teste"><button id="buttonValoresRecarga"><p class="valores">R$ 20</p> <p class="bonus"> Ganhe 2 gb</p></button></a>
-                        <a href="recarga.html" class="teste"><button id="buttonValoresRecarga"><p class="valores">R$ 30</p> <p class="bonus">Ganhe 2,5 gb</p> </button></a>
-                        <a href="recarga.html" class="teste"><button id="buttonValoresRecarga"><p class="valores">R$ 25</p>  <p class="bonus">Ganhe 2,5 gb</p></button></a>
+                        <a href="recarga.html" class="tamanhoBotoes"><button id="buttonValoresRecarga"> <p class="valores">R$ 15 <p>&nbsp;</p> </button></a>
+                        <a href="recarga.html" class="tamanhoBotoes"><button id="buttonValoresRecarga"><p class="valores">R$ 20</p> <p class="bonus"> Ganhe 2 gb</p></button></a>
+                        <a href="recarga.html" class="tamanhoBotoes"><button id="buttonValoresRecarga"><p class="valores">R$ 25</p>  <p class="bonus">Ganhe 2,5 gb</p></button></a>
+                        <a href="recarga.html" class="tamanhoBotoes"><button id="buttonValoresRecarga"><p class="valores">R$ 30</p> <p class="bonus">Ganhe 2,5 gb</p> </button></a>
+                        
                     </div>
                 </div>    
     
             <div class="imgSectionRecarga">
-                <img class="mulher" src="../img/ilustra1.svg"></img>
+                <img class="tamanhoImgRecarga" src="../img/ilustra1.svg"></img>
             </div>
             </div>
         </section>
@@ -129,7 +137,7 @@
                 
                 </div>
                 
-                <img class= "imgEchipIndex" src="../img/ilustra3.svg">
+                <img class= "imgQuemSomos" src="../img/ilustra3.svg">
             </div>
         </section>
 
@@ -158,8 +166,8 @@
                         <!-- Bruno Tadeu -->
                         <div class="cardEquipe">
                             <img src="../img/brunoTadeu.svg" alt="" class="imgTime">
-                            <h2 class="nomeEquipe">Bruno Tadeu</h2>
-                            <h3 class="funcaoEquipe">Back-End</h3>
+                            <p class="nomeEquipe">Bruno Tadeu</p>
+                            <p class="funcaoEquipe">Back-End</p>
                         <div class="imgContato">
                             <!-- GitHub -->
                             <a href="https://github.com/brunotad" target="_blank"><img src="../img/githubLaranja.svg" alt=""></a>
@@ -172,8 +180,8 @@
                         <!-- João Pedro -->
                         <div class="cardEquipe">
                             <img src="../img/joaoPedro.svg" alt="" class="imgTime">
-                            <h2 class="nomeEquipe">João Pedro</h2>
-                            <h3 class="funcaoEquipe">Back-End</h3>
+                            <p class="nomeEquipe">João Pedro</p>
+                            <p class="funcaoEquipe">Back-End</p>
                         <div class="imgContato">
                             <!-- GitHub -->
                             <a href="https://github.com/JoaoLopes994" target="_blank"><img src="../img/githubLaranja.svg" alt=""></a>
@@ -186,8 +194,8 @@
                         <!-- Juliete Freitas -->
                         <div class="cardEquipe">
                             <img src="../img/julieteFreitas.svg" alt="" class="imgTime">
-                            <h2 class="nomeEquipe">Juliete Freitas</h2>
-                            <h3 class="funcaoEquipe">Full-Stack</h3>
+                            <p class="nomeEquipe">Juliete Freitas</p>
+                            <p class="funcaoEquipe">Full-Stack</p>
                         <div class="imgContato">
                             <!-- GitHub -->
                             <a href="https://github.com/julietefreitas" target="_blank"><img src="../img/githubLaranja.svg" alt=""></a>
@@ -200,8 +208,8 @@
                         <!-- Samantha Bianchi -->
                         <div class="cardEquipe">
                             <img src="../img/samanthaBianchi.svg" alt="" class="imgTime">
-                            <h2 class="nomeEquipe">Samantha Bianchi</h2>
-                            <h3 class="funcaoEquipe">Front-End</h3>
+                            <p class="nomeEquipe">Samantha Bianchi</p>
+                            <p class="funcaoEquipe">Front-End</p>
                         <div class="imgContato">
                             <!-- GitHub -->
                             <a href="https://github.com/SahBianchi" target="_blank"><img src="../img/githubLaranja.svg" alt=""></a>
@@ -214,13 +222,13 @@
                         <!-- Weverton Bezerra -->
                         <div class="cardEquipe">
                             <img src="../img/wevertonBezerra.svg" alt="" class="imgTime">
-                            <h2 class="nomeEquipe">Weverton Bezerra</h2>
-                            <h3 class="funcaoEquipe">Front-End</h3>
+                            <p class="nomeEquipe">Weverton Bezerra</p>
+                            <p class="funcaoEquipe">Front-End</p>
                         <div class="imgContato">
                             <!-- GitHub -->
                             <a href="https://github.com/wevertonbezzera013" target="_blank"><img src="../img/githubLaranja.svg" alt=""></a>
                             <!-- Linkedin -->
-                            <a href="https://www.linkedin.com/mwlite/in/weverton-bezerra-da-costa-061ab11a4" target="_blank"><img src="../img/linkedinLaranja.svg" alt=""></a>
+                            <a href="https://www.linkedin.com/mwlite/in/weverton-bezerra-da-costa-061ab11a4" target="_blank" ><img src="../img/linkedinLaranja.svg" alt=""></a>
 
                         </div>
                         </div>
@@ -236,7 +244,33 @@
           <img src="../img/logo-easyc.svg" alt="" class="imgFooter">
         </div>
       </footer>
+
+
+      <!-- Modal Trigger -->
+
+  <section class="modais">
+    <!-- Modal Structure -->
+    <div id="modal-login" class="modal modal-completo-login">
+      <div class="modal-topo">
+        <picture id="modal-picture">
+          <img id="imagem-topo-logo-login" src="../img/logo.svg">
+          <img id="imagem-topo-login" src="../img/close.svg" href="#!"
+            class="modal-close waves-effect waves-green btn-flat" />
+        </picture>
+      </div>
+      <div id="container-principal-login">
+        <p id="texto-login">Login</p>
+        <form name="autenticacao" class="modal-content content-modal-login" style="width: 80%; margin: auto;">
+          <input placeholder="Email" type="email" name="email" required class="input-login">
+          <input placeholder="Senha" type="password" name="senha" required class="input-login">
+          <button type="submit" id="button-login">ENTRAR</button>
+        </form>
+        <a id="ancora-login" href="">AINDA NÃO TENHO CADASTRO</a>
+      </div>
+    </div>
+    </section>
     
+      <!-- Script do materialize para a nav bar -->
       <script>
         document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
@@ -246,7 +280,12 @@
     
            
       </script>
-    
+
+      <!-- Script dos modais -->
+      <script type="text/javascript" src="../js/open-modal.js"></script>
+      <script type="text/javascript" src="../js/script.js"></script>
+
+      <!-- Script Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
     </html>

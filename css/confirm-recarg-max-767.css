@@ -5,44 +5,7 @@
     top: 0px;
     width: 100%;
   }
-  /*HEADER*/
-  .header-nav{
-    width: 100%;
-    top:0px;
-  }
-  nav{
-    background-color:#FFFFFF !important;
-  }
 
-  #logo{
-    width: 100px;
-    height: 100px;
-  }
-  #menu-responsive{
-    width: 30px;
-    height: 30px;
-  }
-  ul li a{
-    text-decoration: none;
-    font-family: 'Spartan';
-    font-size: 18px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: #F8798A !important;
-  }
-  .container-nav {
-    height: 100%;
-    display: flex ;
-    flex-direction: column;
-    justify-content: center;
-    align-items:stretch;
-  
-  }
-
-  .sidenav{
-    width: 50% !important;
-  }
-  /*FIM HEADER */
 
 
   /* MAIN */
@@ -50,7 +13,7 @@
     background-color: #FFEEF0;
     width: 100%;
     height: auto;
-    padding: 30px 10px 10px 10px;
+    padding: 30px 10px 0 10px;
     display: flex;
     justify-content: center;
   }
@@ -89,11 +52,7 @@
     padding: 10px;
   }
   
-  #button_final_compra:hover{
-    background-color: #547676;
-  }
-  
-  #button_final_compra {
+   #button_final_compra {
     width: 100%;
     height: auto;
     justify-self: center;
@@ -107,6 +66,11 @@
     border-radius: 50px;
     font-size: 20px;
   }
+
+  #button_final_compra:hover{
+    background-color: #547676;
+  }
+
  picture {
     width: auto;
     text-align: center;
