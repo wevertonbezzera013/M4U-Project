@@ -33,9 +33,12 @@ CREATE TABLE `cartao_credito` (
 	   `id_cartao` INT AUTO_INCREMENT PRIMARY KEY
      , `id_usuario` INT
 	 , `numero_cartao` VARCHAR(16)
-     , `dt_validade` VARCHAR(10)
+     , `nome_proprietario` VARCHAR(255)
+     , `dt_validade` VARCHAR(4)
      , `cd_seguranca` VARCHAR(3)
-    , FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
+     , `bandeira` VARCHAR(10)
+     , `tipo` VARCHAR(6)
+     , FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 );
 
 # -------------------------------------------------------------
