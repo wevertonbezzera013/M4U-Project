@@ -19,8 +19,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
 
   <script defer type="text/javascript" src="../js/cadastro.js"></script>
-  <script defer type="text/javascript" src="../js/pesquisa-cep.js" <script type="text/javascript"
-    src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script defer type="text/javascript" src="../js/pesquisa-cep.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 </head>
 
@@ -72,15 +72,16 @@
           <!-- CEP/Estado/Cidade -->
           <div class="labelPequeno">
             <!-- CEP -->
-            <input type="text" name="cep" class="labelTamanho imputCadastro" placeholder="CEP" required>
+            <input id="cep" type="text" name="cep" class="labelTamanho imputCadastro" placeholder="CEP" required>
             <!-- ESTADO -->
-            <input type="text" name="cep" class="labelTamanho imputCadastro" placeholder="UF" required>
+            <input id="uf" type="text" name="cep" class="labelTamanho imputCadastro" placeholder="UF" required>
             <!-- CIDADE -->
-            <input type="text" name="cidade" class="labelTamanho imputCadastro" placeholder="Cidade" required>
+            <input id="localidade" type="text" name="cidade" class="labelTamanho imputCadastro" placeholder="Cidade"
+              required>
           </div>
           <!-- ENDEREÇO -->
-          <input type="text" name="endereco" class="imputCadastro" placeholder="Endereço" required>
-          <input type="text" name="endereco" class="imputCadastro" placeholder="Endereço" required>
+          <input id="logradouro" type="text" name="endereco" class="imputCadastro" placeholder="Endereço" required>
+          <input id="bairro" type="text" name="endereco" class="imputCadastro" placeholder="Endereço" required>
           <!-- NUMERO E COMPLEMENTO -->
           <div class="labelPequeno">
             <!-- NUMERO -->
