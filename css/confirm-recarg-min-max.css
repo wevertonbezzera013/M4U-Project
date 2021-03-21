@@ -1,21 +1,31 @@
-
-  body{
-    height: 100vh;
-  } 
   main {
     background-color: #FFEEF0;
     height: auto;
-    padding-top: 30px;
+    top: 0;
     width: 100%;
   }
+
   /*HEADER*/
   .header-nav{
     width: 100%;
     top:0px;
   }
+
   nav{
     background-color:#FFFFFF !important;
   }
+
+  #logo{
+    width: 100px;
+    height: 100px;
+    bottom: -25%;
+  }
+
+  #menu-responsive{
+    width: 30px;
+    height: 30px;
+  }
+
   ul li a{
     text-decoration: none;
     font-family: 'Spartan';
@@ -25,26 +35,29 @@
     color: #F8798A !important;
   }
 
-  #logo{
-    width: 100px;
-    height: 100px;
-    bottom: -25%;
-  }
-  #menu-responsive{
-    width: 30px;
-    height: 30px;
-  }
   .container-nav {
     height: 100%;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items:stretch;
   }
 
   .sidenav{
     width: 50% !important;
   }
+/*FIM HEADER */
+
+
+  /* MAIN */
   
   .secao_corpo_principal{
-    height: auto;
+    background-color: #FFEEF0;
     width: 100%;
+    height: auto;
+    padding: 30px 10px 0 10px;
+    display: flex;
+    justify-content: center;
   }
   .container-principal{
     width: 100%;
@@ -66,8 +79,8 @@
     margin: auto;
   }
   .container_principal{
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
@@ -99,13 +112,23 @@
     border-radius: 50px;
     font-size: 25px;
   }
+
+  #button_final_compra:hover{
+    background-color: #547676;
+  }
+
   picture{
+    width: auto;
+    text-align: center;
     height: auto;
   }
+
   #img_corpo__principal {
-    width: 100%;
+    width: 50%;
     height: 100%;
-    margin-left: 25%;
+    left:0%;
+    top: 0%;
+    margin-left: 0%;
   }
 
   /*MODAL CONFIRMAÇÃO*/  
@@ -215,9 +238,19 @@
     width: 50%;
     margin-right: 0%;
   }
-  #ancora-login{
-    padding-top: 30px;
+
+  #button-login:hover{
+    background-color: #D26A7E !important;
   }
+
+  #ancora-login{
+  padding-top: 30px;
+  color: #F8798A;
+}
+
+#ancora-login:hover{
+  color: #D26A7E;
+}
 
 /*MODAL COMPRA-NEGADA*/
 #modal-compraNegada{

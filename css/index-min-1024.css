@@ -115,8 +115,10 @@ main {
   
   }
 
-  .imgEchip{
-    width: 50%;
+  .imgEchipIndex{
+    width: 27%;
+    margin-left: 5%;
+    margin-top: 3%;
   }
 
   .corpoEchipIndex{
@@ -149,7 +151,7 @@ main {
   }
 
   #buttonEchip{
-    width: 40%;
+    width: 60%;
     height: 25%;
     justify-content: right;
     background-color: #F8798A;
@@ -159,9 +161,9 @@ main {
     font-family:'Spartan', sans-serif;
     font-weight: 1000;
     border-radius: 100px;
-    font-size: 16px;
+    font-size: 25px;
     text-transform: uppercase;
-    margin-left: 50%;
+    margin-left: 30%;
     margin-top: 5%;
   }
 
@@ -206,18 +208,20 @@ main {
   }
 
   .textoQuemSomos{
-    width: 75%;
+    width: 65%;
     height: auto;
     font-family:'Spartan', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     line-height: 155.8%;
     margin-left: 15%;
     color: rgba(0, 0, 0, 0.8);
   }
 
-  .imgEchip{
-    width: 50%;
+  .imgQuemSomos{
+    width: 40%;
+    margin-top: 7%;
+    margin-right: 3%;
   }
 
 /* Seção EQUIPE */
@@ -239,8 +243,9 @@ main {
       }
     
 .imgEquipe{
-        width: 50%;
-      }
+    width: 50%;
+    margin-top: 2%;
+}
     
 .corpoEquipe{
           display: flex;
@@ -344,4 +349,4 @@ main {
       margin-bottom: 5%;
   }
   
-  
+ 

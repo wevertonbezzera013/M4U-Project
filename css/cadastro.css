@@ -10,7 +10,7 @@ main {
     height: auto;
     margin-left: 10%;
     font-family:'Spartan', sans-serif;
-    font-weight:bolder;
+    font-weight: 900;
     font-size: 35px;
     line-height: 155.8%;
     color: #F8798A;
@@ -31,37 +31,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin: 10px auto;
+    padding: 15px;
+    margin: 5px auto;
   
   }
 
 /* FORM */
 form{
-  width: 90%;
+  width: 100%;
 }
 
-  input[type=text]{
-    border-radius: 100px !important;
-    box-shadow: none !important;
-    background-color: #F8798A !important;
-    color: white;
-    font-family: 'Spartan';
-    font-size: 16px;
-    font-weight: 800;
-  }
-
-  input[type=email]{
-    border-radius: 100px !important;
-    box-shadow: none !important;
-    background-color: #F8798A !important;
-    color: white;
-    font-family: 'Spartan';
-    font-size: 16px;
-    font-weight: 800;
-  }
-
-  input[type=password]{
+  .imputCadastro{
     border-radius: 100px !important;
     box-shadow: none !important;
     background-color: #F8798A !important;
@@ -79,10 +59,6 @@ form{
     font-weight: 800;
   }
 
-
-/* :required{
-  background-color: #D26A7E;
-} */
 
   .labelPequeno{
     width: 100%;
@@ -146,7 +122,87 @@ form{
 
   /* MEDIA QUERIES */
 
-@media only screen and (max-width: 425px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+    .tituloForm{
+      text-align: left;
+      width: 50%;
+      height: auto;
+      margin-left: 10%;
+      font-family:'Spartan', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: auto;
+      color: #F8798A;
+      margin-top: 5%;
+    }
+  
+    .secao_corpo_principal_cadastro{
+      width: 100%;
+      height: auto;
+      display:flex;
+      flex-direction: row;
+    
+      top: 50px;
+      justify-content: center;
+      
+    }
+  
+   .img_corpo__form{
+    width: 50%;
+    margin-top: 21%;
+  }
+    
+    .corpo__principal_cadastro{
+      background-color: #FFFFFF;
+      width: 60%;
+      height: auto;
+      border-radius: 50px;
+      display: flex;
+      margin: 0 0 5% 5%;
+      padding: 3% 0 3% 0;
+    }
+  
+    form{
+      height: auto;
+      width: 90%;
+    }
+  
+    .labelPequeno{
+      width: 100%;
+      display: flex;
+      direction: column;
+      flex-wrap: wrap;
+    }
+    
+    .labelTamanho{
+      width: 100% ;
+    }
+  
+    .textoForm{
+      font-family: 'Spartan';
+      font-size: 14px;
+      font-weight: 800;
+      color: #F8798A;
+      line-height: 160%;
+      margin-top: 5%;
+      margin-bottom: 2%;
+  }
+  
+  .imgCartaoCadastro{
+    margin-bottom: -2%;
+    width: 25px;
+  }
+  
+  ::placeholder {
+    color: white !important;
+    padding: 5%;
+    font-family: 'Spartan';
+    font-size: 14px;
+    font-weight: 800;
+  }
+  }
+
+  @media only screen and (max-width:767px) {
   .tituloForm{
     text-align: left;
     width: 80%;
@@ -157,6 +213,7 @@ form{
     font-size: 20px;
     line-height: auto;
     color: #F8798A;
+    margin-top: 20%;
   }
 
   .secao_corpo_principal_cadastro{

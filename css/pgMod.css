@@ -6,6 +6,8 @@
   top: 0px;
   z-index: 9;
 }
+
+
 nav{
   background-color:#FFFFFF !important;
 }
@@ -14,6 +16,7 @@ nav{
   margin-right: 5%;
   height: auto;
 }
+
 #menu-responsive{
   width: 50%;
   height: 50%;
@@ -34,9 +37,6 @@ ul li a:hover{
   color: #D26A7E !important;
 }
 
-/* MAIN */
-
-
 
 /* FOOTER */
 
@@ -53,7 +53,7 @@ footer{
 
 .imgFooter{
   width: 150px;
-  margin: 5%;
+  margin: 1%;
 }
 
 /* MEDIA QUERIES */
@@ -76,7 +76,7 @@ footer{
 
   #logo{
     width: 100px;
-    height: 100px;
+    margin: 4% auto
   }
   #menu-responsive{
     width: 30px;
@@ -94,74 +94,32 @@ footer{
   .sidenav{
     width: 50% !important;
   }
-  /*FIM HEADER */
-  .secao_corpo_principal{
-    background-color: #FFEEF0;
-    width: 100%;
-    height: auto;
-    margin-top: 30%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-  }
-  .container_principal{
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    padding: 10px;
+
+  ul li a{
+    text-decoration: none;
+    font-family: 'Spartan';
+    font-size: 10px !important;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #F8798A !important;
   }
 
-  .corpo__principal{
-    border-radius: 0px;
-    text-align: center;
+  footer{
     width: 100%;
-    height: 100%;
-    font-family:'Spartan', sans-serif;
-    font-weight: 800;
-   
-  
+    bottom: 0;
   }
   
-  .items_label{
-    background-color: #609FA0;
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    font-size: 20px;
-    color:#FFFFFF;
-    text-align: center;
-    margin-bottom: 20px;
+  .container-footer{
+    background-color: #ffffff !important;
+    display: flex;
+    justify-content: center;
   }
   
-  #button_final_compra:hover{
-    background-color: #547676;
+  .imgFooter{
+    width: 150px;
+    margin: 1%;
   }
   
-  #button_final_compra{
-    width: 100%;
-    height: auto;
-    justify-self:center;
-    margin-bottom: 5px;
-    background-color: #609FA0;
-    color:#FFFFFF;
-    border: none;
-    padding: 10px;
-    font-family:'Spartan', sans-serif;
-    font-weight: 1000;
-    border-radius: 10px;
-    font-size: 15px;
-  }
-picture {
-  width: auto;
-}
-  #img_corpo__principal {
-    position: relative;
-    width: 50%;
-    height: 30%;
-    left:0%;
-    top: 0%;
-  
-  }
    
   }
 

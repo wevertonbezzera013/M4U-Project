@@ -1,33 +1,4 @@
 
-  /* HEADER*/
-    .header-nav{
-      position:fixed;
-      width: 100%;
-      top: 0px;
-      z-index: 9;
-    }
-    nav{
-      background-color:#FFFFFF !important;
-    }
-    .container-nav{
-      margin:0% 5% 0% 5%;
-      height: auto;
-    }
-    #menu-responsive{
-      width: 50%;
-      height: 50%;
-      position: relative;
-      left: 0%;
-    }
-  
-    ul li a{
-      text-decoration: none;
-      font-family: 'Spartan';
-      font-size: 20px;
-      font-weight: bolder;
-      text-transform: uppercase;
-      color: #F8798A !important;
-    }
     /* MAIN */
   
     body {

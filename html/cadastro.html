@@ -9,6 +9,7 @@
   <link rel="stylesheet" href= "../css/reset.css">
   <link rel="stylesheet" href= "../css/pgMod.css">
   <link rel="stylesheet" href="../css/cadastro.css">
+  <link rel="stylesheet" href="../css/modelLogin.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -36,10 +37,10 @@
 
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img src="../img/menu-responsive.svg" id ="menu-responsive" alt"menu-hamburguer"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a   href="recarga.html">recarga</a></li>
-                <li><a   href="cadastro.html">e-chip</a></li>
+                <li><a   href="index.html#click-recarga">recarga</a></li>
+                <li><a   href="index.html#click-echip">e-chip</a></li>
                 <li><a   href="index.html#click-quemSomos">quem somos</a></li>
-                <li><a   href="mobile.html">login</a></li>
+                <li><a   href="" data-target="modal-login" class="modal-trigger">login</a></li>
             </ul>
             </div>
         </div>
@@ -48,10 +49,10 @@
         
         <!-- Menu de navegação responsivo -->
         <ul class="sidenav right" id="mobile-demo">
-        <li><a   class="sidenav-trigger" href="recarga.html">recarga</a></li>
-        <li><a   class="sidenav-trigger" href="cadastro.html">e-chip</a></li>
+        <li><a   class="sidenav-trigger" href="index.html#click-recarga">recarga</a></li>
+        <li><a   class="sidenav-trigger" href="index.html#click-echip">e-chip</a></li>
         <li><a  class="sidenav-trigger"  href="index.html#click-quemSomos">quem somos</a></li>
-        <li><a  class="sidenav-trigger"  href="mobile.html">login</a></li>
+        <li><a  href="" data-target="modal-login" class="modal-trigger">login</a></li>
         </ul>
     </header>
 
@@ -59,33 +60,32 @@
         <h1 class="tituloForm">Para comprar o EasyC a gente precisa de alguns dados, é rapidinho!</h1>
     
     <section class ="secao_corpo_principal_cadastro">
-
         <div class="corpo__principal_cadastro">
             <form>
                 <!-- NOME -->
-                  <input type="text" name="nome" class="items_label" placeholder="Nome Completo" required>
+                  <input type="text" name="nome" class="items_label imputCadastro" placeholder="Nome Completo" required>
                 <!-- EMAIL -->
-                <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                <input type="email" name="email" class="imputCadastro" placeholder="E-mail" required>
                <!-- CEP/Estado/Cidade -->
                 <div class="labelPequeno">
                     <!-- CEP -->
-                    <input type="text" name="cep" class="labelTamanho" placeholder="CEP" required>
+                    <input type="text" name="cep" class="labelTamanho imputCadastro" placeholder="CEP" required>
                     <!-- ESTADO -->
-                    <input type="text" name="cep" class="labelTamanho" placeholder="UF" required>
+                    <input type="text" name="cep" class="labelTamanho imputCadastro" placeholder="UF" required>
                     <!-- CIDADE -->
-                    <input type="text" name="cidade" class="labelTamanho" placeholder="Cidade" required>
+                    <input type="text" name="cidade" class="labelTamanho imputCadastro" placeholder="Cidade" required>
                 </div>
                 <!-- ENDEREÇO -->
-                    <input type="text" name="endereco" class="items_label" placeholder="Endereço" required>
+                    <input type="text" name="endereco" class="imputCadastro" placeholder="Endereço" required>
                 <!-- NUMERO E COMPLEMENTO -->
                 <div class="labelPequeno">
                   <!-- NUMERO -->
-                    <input type="text" name="numero" class="labelNumero" placeholder="Numero" required>
+                    <input type="text" name="numero" class="labelNumero imputCadastro" placeholder="Numero" required>
                   <!-- COMPLEMENTO -->
-                  <input type="text" name="complemento" class="labelComplemento" placeholder="Complemento">
+                  <input type="text" name="complemento" class="labelComplemento imputCadastro" placeholder="Complemento">
                 </div>
                 <!-- SENHA -->
-                  <input type="password" name="senha" id="inputPassword4" placeholder="Senha" required>
+                  <input type="password" name="senha" id="inputPassword4" class="imputCadastro" placeholder="Senha" required>
                   
                 <!-- Divisão Cadastro e forma de pagamento -->
                 <div>
@@ -95,13 +95,13 @@
                 <br>
                 </div>
                 <!-- NOME DO TITULAR DO CARTAO -->
-                <input type="text" name="titularCartao" class="items_label" placeholder="Nome Impresso no Cartão" required>
+                <input type="text" name="titularCartao" class="items_label imputCadastro" placeholder="Nome Impresso no Cartão" required>
                 <!-- NUMERO DO CARTAO -->
-                <input type="text" name="numeroCartao" class="items_label" placeholder="Numero do Cartão" required>
+                <input type="text" name="numeroCartao" class="items_label imputCadastro" placeholder="Numero do Cartão" required>
                 <!-- MES/ANO EXPIRACAO + CÓDIGO DE SEGURANÇA-->
                 <div class="labelPequeno">
-                    <input type="text" name="expiracao" placeholder="Expiração" required>
-                    <input type="text" name="cdSeguranca" placeholder="Código de Segurança" required>
+                    <input type="text" name="expiracao" placeholder="Expiração" class="imputCadastro" required>
+                    <input type="text" name="cdSeguranca" placeholder="Código de Segurança" class="imputCadastro" required>
                 </div>
                 <!-- BOTÃO COMPRAR -->
                 <div>
@@ -121,6 +121,30 @@
     </div>
   </footer>
 
+  <!-- Modal Trigger -->
+  <section class="modais">
+    <!-- Modal Structure -->
+    <div id="modal-login" class="modal modal-completo-login">
+      <div class="modal-topo">
+        <picture id="modal-picture">
+          <img id="imagem-topo-logo-login" src="../img/logo.svg">
+          <img id="imagem-topo-login" src="../img/close.svg" href="#!"
+            class="modal-close waves-effect waves-green btn-flat" />
+        </picture>
+      </div>
+      <div id="container-principal-login">
+        <p id="texto-login">Login</p>
+        <form name="autenticacao" class="modal-content content-modal-login" style="width: 80%; margin: auto;">
+          <input placeholder="Email" type="email" name="email" required class="input-login">
+          <input placeholder="Senha" type="password" name="senha" required class="input-login">
+          <button type="submit" id="button-login">ENTRAR</button>
+        </form>
+        <a id="ancora-login" href="">AINDA NÃO TENHO CADASTRO</a>
+      </div>
+    </div>
+    </section>
+
+ <!-- Script do materialize para a nav bar -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
@@ -131,6 +155,11 @@
        
   </script>
 
+  <!-- Script dos modais -->
+  <script type="text/javascript" src="../js/open-modal.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+
+  <!-- Script Materialize -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
