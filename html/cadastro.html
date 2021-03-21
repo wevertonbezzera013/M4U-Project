@@ -1,136 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href= "../css/reset.css">
-  <link rel="stylesheet" href= "../css/pgMod.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/pgMod.css">
   <link rel="stylesheet" href="../css/cadastro.css">
-
   <link rel="preconnect" href="https://fonts.gstatic.com">
-
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
 
-    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-
-   </head>
-
-   <title>Cadastro</title>
+  <script defer type="text/javascript" src="../js/cadastro.js"></script>
+  <script defer type="text/javascript" src="../js/pesquisa-cep.js" <script type="text/javascript"
+    src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 </head>
+
+<title>Cadastro</title>
+
+</head>
+
 <body>
-    <header>
-        <div class="header-nav">
-        <nav class="sidenav-trigger" >
+  <header>
+    <div class="header-nav">
+      <nav class="sidenav-trigger">
         <div class="nav-wrapper">
-            <div class="container-nav">
+          <div class="container-nav">
 
-              <a href="../html/index.html"><img src="../img/logo-easyc.svg" id ="logo" class="brand-logo"></img></a>
+            <a href="../html/index.html"><img src="../img/logo-easyc.svg" id="logo" class="brand-logo"></img></a>
 
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img src="../img/menu-responsive.svg" id ="menu-responsive" alt"menu-hamburguer"></i></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img
+                  src="../img/menu-responsive.svg" id="menu-responsive" alt"menu-hamburguer"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a   href="recarga.html">recarga</a></li>
-                <li><a   href="cadastro.html">e-chip</a></li>
-                <li><a   href="index.html#click-quemSomos">quem somos</a></li>
-                <li><a   href="mobile.html">login</a></li>
+              <li><a href="recarga.html">recarga</a></li>
+              <li><a href="cadastro.html">e-chip</a></li>
+              <li><a href="index.html#click-quemSomos">quem somos</a></li>
+              <li><a href="mobile.html">login</a></li>
             </ul>
-            </div>
+          </div>
         </div>
-        </nav>
-        </div>  
-        
-        <!-- Menu de navegação responsivo -->
-        <ul class="sidenav right" id="mobile-demo">
-        <li><a   class="sidenav-trigger" href="recarga.html">recarga</a></li>
-        <li><a   class="sidenav-trigger" href="cadastro.html">e-chip</a></li>
-        <li><a  class="sidenav-trigger"  href="index.html#click-quemSomos">quem somos</a></li>
-        <li><a  class="sidenav-trigger"  href="mobile.html">login</a></li>
-        </ul>
-    </header>
+      </nav>
+    </div>
 
-    <main>
-        <h1 class="tituloForm">Para comprar o EasyC a gente precisa de alguns dados, é rapidinho!</h1>
-    
-    <section class ="secao_corpo_principal_cadastro">
+    <!-- Menu de navegação responsivo -->
+    <ul class="sidenav right" id="mobile-demo">
+      <li><a class="sidenav-trigger" href="recarga.html">recarga</a></li>
+      <li><a class="sidenav-trigger" href="cadastro.html">e-chip</a></li>
+      <li><a class="sidenav-trigger" href="index.html#click-quemSomos">quem somos</a></li>
+      <li><a class="sidenav-trigger" href="mobile.html">login</a></li>
+    </ul>
+  </header>
 
-        <div class="corpo__principal_cadastro">
-            <form>
-                <!-- NOME -->
-                  <input type="text" name="nome" class="items_label" placeholder="Nome Completo" required>
-                <!-- EMAIL -->
-                <input type="email" name="email" class="form-control" placeholder="E-mail" required>
-               <!-- CEP/Estado/Cidade -->
-                <div class="labelPequeno">
-                    <!-- CEP -->
-                    <input type="text" name="cep" class="labelTamanho" placeholder="CEP" required>
-                    <!-- ESTADO -->
-                    <input type="text" name="cep" class="labelTamanho" placeholder="UF" required>
-                    <!-- CIDADE -->
-                    <input type="text" name="cidade" class="labelTamanho" placeholder="Cidade" required>
-                </div>
-                <!-- ENDEREÇO -->
-                    <input type="text" name="endereco" class="items_label" placeholder="Endereço" required>
-                <!-- NUMERO E COMPLEMENTO -->
-                <div class="labelPequeno">
-                  <!-- NUMERO -->
-                    <input type="text" name="numero" class="labelNumero" placeholder="Numero" required>
-                  <!-- COMPLEMENTO -->
-                  <input type="text" name="complemento" class="labelComplemento" placeholder="Complemento">
-                </div>
-                <!-- SENHA -->
-                  <input type="password" name="senha" id="inputPassword4" placeholder="Senha" required>
-                  
-                <!-- Divisão Cadastro e forma de pagamento -->
-                <div>
-                <p class="textoForm">
-                  <img src="../img/cartaoRosa.svg" alt="" class="imgCartaoCadastro">
-                  DADOS DO CARTÃO DE CRÉDITO</p>
-                <br>
-                </div>
-                <!-- NOME DO TITULAR DO CARTAO -->
-                <input type="text" name="titularCartao" class="items_label" placeholder="Nome Impresso no Cartão" required>
-                <!-- NUMERO DO CARTAO -->
-                <input type="text" name="numeroCartao" class="items_label" placeholder="Numero do Cartão" required>
-                <!-- MES/ANO EXPIRACAO + CÓDIGO DE SEGURANÇA-->
-                <div class="labelPequeno">
-                    <input type="text" name="expiracao" placeholder="Expiração" required>
-                    <input type="text" name="cdSeguranca" placeholder="Código de Segurança" required>
-                </div>
-                <!-- BOTÃO COMPRAR -->
-                <div>
-                    <button type="submit" id="buttonFormCadastro">Comprar</button>
-                </div>
-              </form>
-         
-        </div> 
+  <main>
+    <h1 class="tituloForm">Para comprar o EasyC a gente precisa de alguns dados, é rapidinho!</h1>
 
-        <img class= "img_corpo__form" src="../img/ilustra6.svg">
-      </section>  
+    <section class="secao_corpo_principal_cadastro">
+
+      <div class="corpo__principal_cadastro">
+        <form id="form_cadastro">
+          <!-- NOME -->
+          <input type="text" name="nome" class="items_label" placeholder="Nome Completo" required>
+          <!-- EMAIL -->
+          <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+          <!-- CEP/Estado/Cidade -->
+          <div class="labelPequeno">
+            <!-- CEP -->
+            <input id="cep" type="text" name="cep" class="labelTamanho" placeholder="CEP" required>
+            <!-- ESTADO -->
+            <input id="uf" type="text" name="uf" class="labelTamanho" placeholder="UF" required>
+            <!-- CIDADE -->
+            <input id="localidade" type="text" name="cidade" class="labelTamanho" placeholder="Cidade" required>
+          </div>
+          <!-- ENDEREÇO -->
+          <div id="labelEndereco">
+            <input id="logradouro" type="text" name="endereco" class="items_label" placeholder="Rua" required>
+            <input id="bairro" type="text" name="bairro" class="items_label" placeholder="Bairro" required>
+          </div>
+          <!-- NUMERO E COMPLEMENTO -->
+          <div class="labelPequeno">
+            <!-- NUMERO -->
+            <input type="text" name="numero" class="labelNumero" placeholder="Numero" required>
+            <!-- COMPLEMENTO -->
+            <input type="text" name="complemento" class="labelComplemento" placeholder="Complemento">
+          </div>
+          <!-- SENHA -->
+          <input type="password" name="senha" id="inputPassword4" placeholder="Senha" required>
+          <input type="password" name="confirm_senha" id="inputPassword4" placeholder="Confirme sua senha" required>
+          <!-- Divisão Cadastro e forma de pagamento -->
+          <div>
+            <p class="textoForm">
+              <img src="../img/cartaoRosa.svg" alt="" id="imgCartaoCadastro">
+              DADOS DO CARTÃO DE CRÉDITO</p>
+            <br>
+          </div>
+          <!-- NOME DO TITULAR DO CARTAO -->
+          <input type="text" name="titularCartao" class="items_label" placeholder="Nome Impresso no Cartão" required>
+          <!-- NUMERO DO CARTAO -->
+          <input type="text" name="numeroCartao" class="items_label" placeholder="Numero do Cartão" required>
+          <!-- MES/ANO EXPIRACAO + CÓDIGO DE SEGURANÇA-->
+          <div class="labelPequeno">
+            <input type="text" name="expiracao" placeholder="Expiração" required>
+            <input type="text" name="cdSeguranca" placeholder="Código de Segurança" required>
+          </div>
+          <!-- BOTÃO COMPRAR -->
+          <button type="submit" id="buttonFormCadastro">Comprar</button>
+        </form>
+
+      </div>
+
+      <img id=" img_corpo__form" src="../img/ilustra6.svg">
+    </section>
   </main>
 
-  <footer> 
+  <footer>
     <div class="container-footer">
       <img src="../img/logo-easyc.svg" alt="" class="imgFooter">
     </div>
   </footer>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems,Option);
-    console.log("oi");
-  });
-
-       
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, Option);
+      console.log("oi");
+    });
   </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>
