@@ -1,0 +1,18 @@
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.secao_corpo_principal_recarga1{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFEEF0;
+}
+
+.corpo_principal_recarga_index{
+    background-color: white;
+}
+
+main{
+    background-color: white;
+}
