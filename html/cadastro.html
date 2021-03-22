@@ -72,7 +72,8 @@
           <!-- CEP/Estado/Cidade -->
           <div class="labelPequeno">
             <!-- CEP -->
-            <input id="cep" type="text" name="cep" class="labelTamanho imputCadastro" maxlength="7" placeholder="CEP" required>
+            <input id="cep" type="text" name="cep" class="labelTamanho imputCadastro" maxlength="8" placeholder="CEP"
+              required>
             <!-- ESTADO -->
             <input id="uf" type="text" name="uf" class="labelTamanho imputCadastro" placeholder="UF" required>
             <!-- CIDADE -->
@@ -80,17 +81,18 @@
               required>
           </div>
           <!-- ENDEREÇO -->
-          <input id="logradouro" type="text" name="rua" class="imputCadastro" placeholder="Endereço" required>
-          <input id="bairro" type="text" name="bairro" class="imputCadastro" placeholder="Endereço" required>
+          <input id="logradouro" type="text" name="rua" class="imputCadastro" placeholder="Rua" required>
+          <input id="bairro" type="text" name="bairro" class="imputCadastro" placeholder="Bairro" required>
           <!-- NUMERO E COMPLEMENTO -->
           <div class="labelPequeno">
             <!-- NUMERO -->
-            <input type="text" name="numero" class="labelNumero imputCadastro" placeholder="Numero" required>
+            <input type="number" name="numero" class="labelNumero imputCadastro" placeholder="Numero" required>
             <!-- COMPLEMENTO -->
             <input type="text" name="complemento" class="labelComplemento imputCadastro" placeholder="Complemento">
           </div>
           <!-- SENHA -->
-          <input type="password" name="senha" id="inputPassword4" class="imputCadastro" placeholder="Senha" required>
+          <input type="password" name="senha" id="inputPassword4" class="imputCadastro" maxlength="8" minlength="6"
+            placeholder="Senha" required>
           <input type="password" name="confirm_senha" id="inputPassword" class="imputCadastro"
             placeholder="Confirme sua senha" required>
           <!-- Divisão Cadastro e forma de pagamento -->
@@ -102,14 +104,16 @@
           </div>
           <!-- NOME DO TITULAR DO CARTAO -->
           <input type="text" name="titularCartao" class="items_label imputCadastro"
-            placeholder="Nome Impresso no Cartão" maxlength="16" required>
+            placeholder="Nome Impresso no Cartão" required>
           <!-- NUMERO DO CARTAO -->
           <input type="text" name="numeroCartao" class="items_label imputCadastro" placeholder="Numero do Cartão"
             required>
           <!-- MES/ANO EXPIRACAO + CÓDIGO DE SEGURANÇA-->
           <div class="labelPequeno">
-            <input type="text" name="expiracao" placeholder="Expiração" class="imputCadastro" required>
-            <input type="text" name="cdSeguranca" placeholder="Código de Segurança" class="imputCadastro" required>
+            <input id="cartao_expiracao" type="text" name="expiracao" placeholder="Expiração" maxlength="4"
+              class="imputCadastro" required>
+            <input type="text" name="cdSeguranca" placeholder="Código de Segurança" class="imputCadastro" maxlength="3"
+              minlength="3" required>
           </div>
           <!-- BOTÃO COMPRAR -->
           <div>
