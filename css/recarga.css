@@ -119,6 +119,10 @@ form{
   #buttonFormRecarga:hover{
     background-color: #547676;
   }
+
+  .character-counter{
+    display: none;
+  }
  
 
   /* MEDIA QUERIES */
