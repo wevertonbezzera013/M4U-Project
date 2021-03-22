@@ -1,18 +1,23 @@
 const formulario = document.forms.registro;
 const button = document.querySelector("#buttonFormCadastro");
 const textoSenha = document.querySelector("#texto_senha");
+const cartaoExpiracao = document.querySelector("#cartao_expiracao");
 
-formulario.addEventListener("submit", (e) => {
+button.addEventListener("click", (e) => {
 	e.preventDefault();
 	const { senha, confirm_senha } = formulario;
-	console.log(senha.value, confirm_senha.value);
 	const result = userModel.checkPassword(senha, confirm_senha);
 
-	if (result == false) {
+	if (!result) {
 		console.log("to aq");
 	} else {
 		userController.controllerUser();
 	}
+});
+
+cartaoExpiracao.addEventListener("blur", () => {
+	const validation = mascaraValidacao(cartaoExpiracao.value, "##/##");
+	cartaoExpiracao.value = validation;
 });
 
 class userController {
@@ -45,6 +50,7 @@ class userModel {
 			rua: rua.value,
 			bairro: bairro.value,
 			numero: numero.value,
+			numeroTelefone: "+55" + sorteiaNumero(),
 		};
 		console.log(pessoa);
 	}
@@ -53,10 +59,6 @@ class userModel {
 		if (password.value !== confirmPassword.value) {
 			confirmPassword.setCustomValidity("Senhas não coincidem");
 			confirmPassword.reportValidity();
-			setTimeout(() => {
-				password.value = "";
-				confirmPassword.value = "";
-			}, 3000);
 			return false;
 		} else {
 			confirmPassword.setCustomValidity("");
@@ -65,37 +67,23 @@ class userModel {
 	}
 }
 
-/* button.addEventListener("click", (e) => {
-	e.preventDefault();
-	const { senha, senha1 } = formulario;
-	const result = checkPassword(senha, senha1);
+let arrayNumerosTelefonicos = ["21999994596", "219658485962"];
+const mascaraNumero = (value, pattern) => {
+	let i = 0;
+	const v = value.toString();
+	return pattern.replace(/#/g, () => v[i++] || "");
+};
 
-	if (result) {
-		console.log("Senha iguais");
-	} else {
-		const { nome, email, cep, uf, cidade, rua, bairro, numero } = formulario;
-		const pessoa = {
-			email: email.value,
-			nome: nome.value,
-			senha: senha.value,
-			cep: cep.value.replace("-", ""),
-			uf: uf.value,
-			cidade: cidade.value,
-			rua: rua.value,
-			bairro: bairro.value,
-			numero: numero.value,
-		};
-		console.log(pessoa);
-	}
-}); */
+const sorteiaNumero = () => {
+	const numeroSorteado = arrayNumerosTelefonicos[0];
+	arrayNumerosTelefonicos = arrayNumerosTelefonicos.splice(0, 1);
+	console.log("Array" + arrayNumerosTelefonicos);
+	//const mascara = mascaraNumero(numeroSorteado, "(##)#####-####");
+	return numeroSorteado;
+};
 
-/* const { nome, email, cep, uf, cidade, endereco, senha } = form;
-	const pessoa = {
-		email: email.value,
-		senha: senha.value,
-		senha: senha.value,
-	};
-	console.log(pessoa);
-	email.value = " ";
-	senha.value = " ";
-}); */
+const mascaraValidacao = (value, pattern) => {
+	let i = 0;
+	const v = value.toString();
+	return pattern.replace(/#/g, () => v[i++] || "");
+};

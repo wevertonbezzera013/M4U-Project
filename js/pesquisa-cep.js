@@ -20,9 +20,7 @@ class Controller {
 			.then((dados) => {
 				Model.processaDados(dados);
 			})
-			.catch((err) => {
-				console.log(err);
-			});
+			.catch((err) => {});
 	}
 }
 
@@ -30,7 +28,6 @@ class Model {
 	static processaDados(dados) {
 		for (let campo in dados) {
 			if (document.querySelector("#" + campo)) {
-				console.log(campo);
 				document.querySelector("#" + campo).value = dados[campo];
 			}
 		}
