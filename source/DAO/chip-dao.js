@@ -20,7 +20,7 @@ module.exports = class UsuarioDAO
     filtroChip(parametro)
     {
         return new Promise((resolve, reject)=>{
-            con.query('SELECT * FROM chip WHERE id_usuario = ?', parametro, (erro, linhas)=>{
+            con.query('SELECT * FROM chip WHERE id_chip = ?', parametro, (erro, linhas)=>{
                 if(erro) reject('Não foi possível realizar a consulta por id');
                 else resolve(linhas);
             });
@@ -40,20 +40,22 @@ module.exports = class UsuarioDAO
     deletaChip(parametro)
     {
         return new Promise((resolve, reject)=>{
-            con.query('DELETE FROM chip WHERE id_usuario = ?', parametro, (erro, linhas)=>{
+            con.query('DELETE FROM chip WHERE id_chip = ?', parametro, (erro, linhas)=>{
                 if(erro) reject('Não foi possível deletar o chip');
                 else resolve('Chip deletado');  
             });
         });
     }
 
-    atualizaChip(parametro)
-    {
-        return new Promise((resolve, reject)=>{
-            con.query('UPDATE chip SET numero_chip = ? WHERE id_usuario = ?', parametro, (erro, linhas)=>{
-                if(erro) reject('Não foi possível atualizar o chip');
-                else resolve('Chip atualizado');           
+    /*
+        atualizaChip(parametro)
+        {
+            return new Promise((resolve, reject)=>{
+                con.query('UPDATE chip SET numero_chip = ? WHERE id_chip = ?', parametro, (erro, linhas)=>{
+                    if(erro) reject('Não foi possível atualizar o chip');
+                    else resolve('Chip atualizado');           
+                });
             });
-        });
-    }
+        }
+    */
 }

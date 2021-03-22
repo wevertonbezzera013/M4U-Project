@@ -1,6 +1,5 @@
-# CREATE DATABASE easyc;
-# USE easyc;
-DROP TABLE endereco;
+# USE ulhn77u0d96yeku8;
+
 # -------------------------------------------------------------
 # CRIAÇÃO DA TABELA DE USUÁRIOS
 # -------------------------------------------------------------
@@ -33,7 +32,7 @@ CREATE TABLE `cartao_credito` (
 	   `id_cartao` INT AUTO_INCREMENT PRIMARY KEY
      , `id_usuario` INT
 	 , `numero_cartao` VARCHAR(16)
-     , `nome_proprietario` VARCHAR(255)
+     , `nome_titular` VARCHAR(255)
      , `dt_validade` VARCHAR(4)
      , `cd_seguranca` VARCHAR(3)
      , `bandeira` VARCHAR(10)

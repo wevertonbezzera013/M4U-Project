@@ -20,7 +20,7 @@ module.exports = class EnderecoDAO
     filtroEndereco(parametro)
     {
         return new Promise((resolve, reject)=>{
-            con.query('SELECT * FROM endereco WHERE id_usuario = ?', parametro, (erro, linhas)=>{
+            con.query('SELECT * FROM endereco WHERE id_endereco = ?', parametro, (erro, linhas)=>{
                 if(erro) reject('Não foi possível realizar a consulta por id');
                 else resolve(linhas);
             });
@@ -41,21 +41,23 @@ module.exports = class EnderecoDAO
     deletaEndereco(parametro)
     {
         return new Promise((resolve, reject)=>{
-            con.query('DELETE FROM endereco WHERE id_usuario = ?', parametro, (erro, linhas)=>{
+            con.query('DELETE FROM endereco WHERE id_endereco = ?', parametro, (erro, linhas)=>{
                 if(erro) reject('Não foi possível deletar o endereço');
                 else resolve('Endereço deletado');  
             });
         });
     }
 
-    atualizaEndereco(parametro)
-    {
-        return new Promise((resolve, reject)=>{
-            con.query('UPDATE endereco SET logradouro = ?, numero = ?, complemento = ?, cidade = ?, uf = ?, cep = ? WHERE id_usuario = ?', 
-            parametro, (erro, linhas)=>{
-                if(erro) reject('Não foi possível atualizar o endereço');
-                else resolve('Endereço atualizado');           
+    /*
+        atualizaEndereco(parametro)
+        {
+            return new Promise((resolve, reject)=>{
+                con.query('UPDATE endereco SET logradouro = ?, numero = ?, complemento = ?, cidade = ?, uf = ?, cep = ? WHERE id_endereco = ?', 
+                parametro, (erro, linhas)=>{
+                    if(erro) reject('Não foi possível atualizar o endereço');
+                    else resolve('Endereço atualizado');           
+                });
             });
-        });
-    }
+        }
+    */  
 }

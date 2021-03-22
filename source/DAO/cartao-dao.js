@@ -20,7 +20,7 @@ module.exports = class CartaoDAO
     filtroCartao(parametro)
     {
         return new Promise((resolve, reject)=>{
-            con.query('SELECT * FROM cartao_credito WHERE id_usuario = ?', parametro, (erro, linhas)=>{
+            con.query('SELECT * FROM cartao_credito WHERE id_cartao = ?', parametro, (erro, linhas)=>{
                 if(erro) reject('Não foi possível realizar a consulta por id');
                 else resolve(linhas);
             });
@@ -30,10 +30,10 @@ module.exports = class CartaoDAO
     insereCartao(parametro)
     {
         return new Promise((resolve, reject)=>{
-            con.query('INSERT INTO cartao_credito (id_usuario, numero_cartao, nome_proprietario, dt_validade, cd_seguranca, bandeira, tipo) VALUES (?, ?, ?, ?, ?, ?, ?)', 
+            con.query('INSERT INTO cartao_credito (id_usuario, numero_cartao, nome_titular, dt_validade, cd_seguranca, bandeira, tipo) VALUES (?, ?, ?, ?, ?, ?, ?)', 
             parametro, (erro, linhas)=>{
                 if(erro) reject('Não foi possível inserir o cartão');
-                else resolve('Usuário inserido');     
+                else resolve('Cartão inserido');     
             });    
         });
     }
@@ -41,21 +41,23 @@ module.exports = class CartaoDAO
     deletaCartao(parametro)
     {
         return new Promise((resolve, reject)=>{
-            con.query('DELETE FROM cartao_credito WHERE id_usuario = ?', parametro, (erro, linhas)=>{
+            con.query('DELETE FROM cartao_credito WHERE id_cartao = ?', parametro, (erro, linhas)=>{
                 if(erro) reject('Não foi possível deletar o cartão');
-                else resolve('Usuário deletado');  
+                else resolve('Cartão deletado');  
             });
         });
     }
 
-    atualizaCartao(parametro)
-    {
-        return new Promise((resolve, reject)=>{
-            con.query('UPDATE cartao_credito SET id_usuario = ?, numero_cartao = ?, nome_proprietario = ?, dt_validade = ?, cd_seguranca = ?, bandeira = ?, tipo WHERE id_usuario = ?',
-            parametro, (erro, linhas)=>{
-                if(erro) reject('Não foi possível atualizar o usuario');
-                else resolve('Usuário atualizado');           
+    /*
+        atualizaCartao(parametro)
+        {
+            return new Promise((resolve, reject)=>{
+                con.query('UPDATE cartao_credito SET id_cartao = ?, numero_cartao = ?, nome_titular = ?, dt_validade = ?, cd_seguranca = ?, bandeira = ?, tipo WHERE id_usuario = ?',
+                parametro, (erro, linhas)=>{
+                    if(erro) reject('Não foi possível atualizar o usuario');
+                    else resolve('Usuário atualizado');           
+                });
             });
-        });
-    }
+        }
+    */
 }

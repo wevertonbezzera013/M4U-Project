@@ -1,4 +1,4 @@
-const ChipDAO = require('../DAO/chip-dao')
+const ChipDAO = require('../dao/chip-dao')
 
 module.exports = (app, bd) =>
 {
@@ -43,13 +43,15 @@ module.exports = (app, bd) =>
         }  
     });
 
-    app.put('/usuario/:id', async (req, resp)=>{
-        let parametro = [req.body.id_usuario, req.body.numero_chip, req.params.id];
-        try{
-            const atualizarChip = await chipDAO.atualizaChip(parametro);
-            resp.send(atualizarChip);
-        } catch {
-            resp.send(erro);
-        }
-    });
+    /*
+        app.put('/usuario/:id', async (req, resp)=>{
+            let parametro = [req.body.id_usuario, req.body.numero_chip, req.params.id];
+            try{
+                const atualizarChip = await chipDAO.atualizaChip(parametro);
+                resp.send(atualizarChip);
+            } catch {
+                resp.send(erro);
+            }
+        });
+    */
 };

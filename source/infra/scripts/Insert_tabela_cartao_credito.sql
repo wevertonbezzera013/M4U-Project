@@ -1,9 +1,9 @@
-USE easyc;
+USE ulhn77u0d96yeku8;
 
 # -------------------------------------------------------------
 # POPULANDO TABELA DE CARTÕES DE CRÉDITO
 # -------------------------------------------------------------
-INSERT INTO cartao_credito (id_usuario, numero_cartao, nome_proprietario, dt_validade, cd_seguranca, bandeira, tipo)
+INSERT INTO cartao_credito (id_usuario, numero_cartao, nome_titular, dt_validade, cd_seguranca, bandeira, tipo)
 VALUES (1, '5549797103771596', 'SAMUEL ALVES FERREIRA', '0322', '515', 'master', 'credit')
 	  ,(2, '5295535057048991', 'NICOLASH PEREIRA CASTRO', '0625', '597', 'master', 'credit')
 	  ,(3, '5453666613757888', 'RAFAELA COSTA SILVA', '0225', '808', 'master', 'credit')

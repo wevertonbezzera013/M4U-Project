@@ -1,4 +1,4 @@
-const UsuarioDAO = require('../DAO/usuario-dao')
+const UsuarioDAO = require('../dao/usuario-dao')
 
 module.exports = (app, bd) =>
 {

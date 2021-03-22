@@ -1,4 +1,4 @@
-const CartaoDAO = require('../DAO/cartao-dao')
+const CartaoDAO = require('../dao/cartao-dao')
 
 module.exports = (app, bd) =>
 {
@@ -24,7 +24,7 @@ module.exports = (app, bd) =>
     });
 
     app.post('/cartao', async (req, resp)=>{
-        let parametro = [req.body.id_usuario, req.body.numero_cartao, req.body.nome_proprietario, 
+        let parametro = [req.body.id_usuario, req.body.numero_cartao, req.body.nome_titular, 
                          req.body.dt_validade, req.body.cd_seguranca, req.body.bandeira, req.body.tipo];
         try{
             const inserirCartao = await cartaoDAO.insereCartao(parametro);
@@ -44,14 +44,16 @@ module.exports = (app, bd) =>
         }  
     });
 
-    app.put('/cartao/:id', async (req, resp)=>{
-        let parametro = [req.body.id_usuario, req.body.numero_cartao, req.body.nome_proprietario, 
-                         req.body.dt_validade, req.body.cd_seguranca, req.body.bandeira, req.body.tipo, req.params.id];
-        try{
-            const atualizarCartao = await cartaoDAO.atualizaCartao(parametro);
-            resp.send(atualizarCartao);
-        } catch {
-            resp.send(erro);
-        }
-    });
+    /*
+        app.put('/cartao/:id', async (req, resp)=>{
+            let parametro = [req.body.id_usuario, req.body.numero_cartao, req.body.nome_titular, 
+                            req.body.dt_validade, req.body.cd_seguranca, req.body.bandeira, req.body.tipo, req.params.id];
+            try{
+                const atualizarCartao = await cartaoDAO.atualizaCartao(parametro);
+                resp.send(atualizarCartao);
+            } catch {
+                resp.send(erro);
+            }
+        });
+    */
 };
