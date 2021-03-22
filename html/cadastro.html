@@ -64,7 +64,7 @@
 
     <section class="secao_corpo_principal_cadastro">
       <div class="corpo__principal_cadastro">
-        <form>
+        <form name="registro">
           <!-- NOME -->
           <input type="text" name="nome" class="items_label imputCadastro" placeholder="Nome Completo" required>
           <!-- EMAIL -->
@@ -74,14 +74,14 @@
             <!-- CEP -->
             <input id="cep" type="text" name="cep" class="labelTamanho imputCadastro" placeholder="CEP" required>
             <!-- ESTADO -->
-            <input id="uf" type="text" name="cep" class="labelTamanho imputCadastro" placeholder="UF" required>
+            <input id="uf" type="text" name="uf" class="labelTamanho imputCadastro" placeholder="UF" required>
             <!-- CIDADE -->
             <input id="localidade" type="text" name="cidade" class="labelTamanho imputCadastro" placeholder="Cidade"
               required>
           </div>
           <!-- ENDEREÇO -->
-          <input id="logradouro" type="text" name="endereco" class="imputCadastro" placeholder="Endereço" required>
-          <input id="bairro" type="text" name="endereco" class="imputCadastro" placeholder="Endereço" required>
+          <input id="logradouro" type="text" name="rua" class="imputCadastro" placeholder="Endereço" required>
+          <input id="bairro" type="text" name="bairro" class="imputCadastro" placeholder="Endereço" required>
           <!-- NUMERO E COMPLEMENTO -->
           <div class="labelPequeno">
             <!-- NUMERO -->
@@ -91,8 +91,8 @@
           </div>
           <!-- SENHA -->
           <input type="password" name="senha" id="inputPassword4" class="imputCadastro" placeholder="Senha" required>
-          <input type="password" name="senha" id="inputPassword" class="imputCadastro" placeholder="Confirme sua senha"
-            required>
+          <input type="password" name="confirm_senha" id="inputPassword" class="imputCadastro"
+            placeholder="Confirme sua senha" required>
           <!-- Divisão Cadastro e forma de pagamento -->
           <div>
             <p class="textoForm">

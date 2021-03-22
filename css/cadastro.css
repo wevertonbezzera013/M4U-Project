@@ -72,6 +72,7 @@ form{
   .labelPequeno input {
     margin: 0px 2px 8px !important;
   }
+
   #labelEndereco{
     width: 100%;
     display: flex;
