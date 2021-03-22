@@ -72,7 +72,7 @@
           <!-- CEP/Estado/Cidade -->
           <div class="labelPequeno">
             <!-- CEP -->
-            <input id="cep" type="text" name="cep" class="labelTamanho imputCadastro" placeholder="CEP" required>
+            <input id="cep" type="text" name="cep" class="labelTamanho imputCadastro" maxlength="7" placeholder="CEP" required>
             <!-- ESTADO -->
             <input id="uf" type="text" name="uf" class="labelTamanho imputCadastro" placeholder="UF" required>
             <!-- CIDADE -->
@@ -102,7 +102,7 @@
           </div>
           <!-- NOME DO TITULAR DO CARTAO -->
           <input type="text" name="titularCartao" class="items_label imputCadastro"
-            placeholder="Nome Impresso no Cartão" required>
+            placeholder="Nome Impresso no Cartão" maxlength="16" required>
           <!-- NUMERO DO CARTAO -->
           <input type="text" name="numeroCartao" class="items_label imputCadastro" placeholder="Numero do Cartão"
             required>

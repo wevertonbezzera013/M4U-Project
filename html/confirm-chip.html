@@ -1,145 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="../css/confirm-chip-min-1024.css" media="screen and (min-width:1024px)"
-    type="text/css" />
-  <link rel="stylesheet" href="../css/confirm-chip-max-767.css" media="screen and (max-width:767px)" type="text/css" />
-  <link rel="stylesheet" href="../css/confirm-chip-min-max.css"
-    media="only screen and (min-width: 768px) and (max-width: 1023px)" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/pgMod.css">
+    <link rel="stylesheet" href="../css/modelLogin.css">
 
-  <title>Confirmação Recarga</title>
+    <!-- CSS DO INDEX + CSS PARA RESPONSIVO -->
+    <!-- Desktop -->
+    <link rel="stylesheet" href="../css/confirm-chip-min-1024.css" media="screen and (min-width:1024px)" type="text/css" />
+    <!-- Tablet -->
+    <link rel="stylesheet" href="../css/confirm-chip-min-max.css" media="only screen and (min-width: 768px) and (max-width: 1023px)" type="text/css" />
+    <!-- Celular -->
+    <link rel="stylesheet" href="../css/confirm-chip-max-767.css" media="screen and (max-width:767px)" type="text/css" />
+
+    <!-- Fontes utilizadas -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- Biblioteca Materealize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+</head>
+
+<title>Confirmação Compra - Chip</title>
+
 </head>
 
 <body>
-  <div class="header-nav">
-    <nav class="sidenav-trigger">
-      <div class="nav-wrapper">
-        <div class="container-nav">
-          <img src="../img/logo.svg" id="logo" class="brand-logo"></img>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img
-                src="../img/menu-responsive.svg" id="menu-responsive" alt"menu-hamburguer"></i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="" data-target="modal-login" class="modal-trigger">RECARGA</a></li>
-            <li><a href="badges.html">E-CHIP</a></li>
-            <li><a href="collapsible.html">QUEM SOMOS</a></li>
-            <li><a href="mobile.html">EQUIPE</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+    <header>
+        <div class="header-nav">
+            <nav class="sidenav-trigger">
+                <div class="nav-wrapper">
+                    <div class="container-nav">
 
-  <ul class="sidenav right" id="mobile-demo">
-    <li><a class="sidenav-trigger" href="sass.html">RECARGA</a></li>
-    <li><a class="sidenav-trigger" href="badges.html">E-CHIP</a></li>
-    <li><a class="sidenav-trigger" href="collapsible.html">QUEM SOMOS</a></li>
-    <li><a class="sidenav-trigger" href="mobile.html">EQUIPE</a></li>
-  </ul>
+                        <img src="../img/logo-easyc.svg" id="logo" class="brand-logo"></img>
+
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img
+                                    src="../img/menu-responsive.svg" id="menu-responsive" alt"menu-hamburguer"></i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="index.html#click-recarga">recarga</a></li>
+                            <li><a href="index.html#click-echip">e-chip</a></li>
+                            <li><a href="index.html#click-quemSomos">quem somos</a></li>
+                            <li><a href="" data-target="modal-login" class="modal-trigger">login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Menu de navegação responsivo -->
+        <ul class="sidenav right" id="mobile-demo">
+            <li><a class="sidenav-trigger" href="index.html#click-recarga">RECARGA</a></li>
+            <li><a class="sidenav-trigger" href="index.html#click-echip">E-CHIP</a></li>
+            <li><a class="sidenav-trigger" href="index.html#click-quemSomos">QUEM SOMOS</a></li>
+            <li><a href="" data-target="modal-login" class="modal-trigger">LOGIN</a></li>
+        </ul>
+    </header>
 
 
   <main>
-    <section class="secao_corpo_principal">
-      <p id="texto-chip">Agora é só confirmar os dados</p>
-      <div class="container-principal">
-        <div class=corpo__principal>
-          <div class=container_principal>
-            <label class="items_label" id="recarga-chip">E-CHIP R$ 25,00</label>
-            <label class="items_label" id="recarga-cartao">Cartão</label>
-            <label class="items_label" id="recarga-valid">Validade</label>
+    <section class="secao_corpo_principalConfirmChip">
+      <p id="texto-ConfirmChip">Agora é só confirmar os dados</p>
+      <div class="container-principalConfirmChip">
+        <div class=corpo__principalConfirmChip>
+
+          <div class=container_principalConfirmChip>
+            <label class="items_labelConfirmChip" id="recarga-chip">E-CHIP R$ 15,00</label>
+            <label class="items_labelConfirmChip" id="recarga-cartao">Cartão</label>
+            <label class="items_labelConfirmChip" id="recarga-valid">Validade</label>
             <!-- <label class="items_label">Validade</label> -->
-            <button class="btn modal-trigger" id="button_final_compra" data-target="modal-compraNegada">FINALIZAR
+            <button class="btn modal-trigger" id="button_final_ConfirmChip" data-target="modal-compraNegada">FINALIZAR
               RECARGA</button>
           </div>
         </div>
         <picture>
-          <img id="img_corpo__principal" src="../img/ilustraPrancheta.svg">
+          <img id="img_corpo__principalConfirmChip" src="../img/Mask Group.svg">
         </picture>
       </div>
     </section>
   </main>
 
-  <footer id="footer-easy">
-    <picture>
-      <img id="imagem-footer" src="../img/logo.svg">
+  <footer>
+    <div class="container-footer">
+        <img src="../img/logo-easyc.svg" alt="" class="imgFooter">
+    </div>
+</footer>
+
+<!-- Modal Trigger -->
+
+<section class="modais">
+<!-- Modal Structure - LOGIN-->
+<div id="modal-login" class="modal modal-completo-login">
+  <div class="modal-topo">
+    <picture id="modal-picture">
+      <img id="imagem-topo-logo-login" src="../img/logo.svg">
+      <img id="imagem-topo-login" src="../img/close.svg" href="#!"
+        class="modal-close waves-effect waves-green btn-flat" />
     </picture>
-  </footer>
+  </div>
+  <div id="container-principal-login">
+    <p id="texto-login">Login</p>
+    <form name="autenticacao" class="modal-content content-modal-login" style="width: 80%; margin: auto;">
+      <input placeholder="Email" type="email" name="email" required class="input-login">
+      <input placeholder="Senha" type="password" name="senha" required class="input-login">
+      <button type="submit" id="button-login">ENTRAR</button>
+    </form>
+    <a id="ancora-login" href="">AINDA NÃO TENHO CADASTRO</a>
+  </div>
+</div>
 
-  <!-- Modal Trigger -->
+<!-- Modal Structure - COMPRA CONFIRMADA-->
+<div id="modal-confirm" class="modal modal-completo">
+  <div class="modal-topo">
+    <img id="imagem-topo" src="../img/close.svg" href="#!" class="modal-close waves-effect waves-green btn-flat" />
+  </div>
+  <div class="modal-content content-modal ">
+    <img id="imagem-modal" src="../img/confirmacao.svg">
+    <article>
+      <p id="conteudo-modal-first">OBRIGADA!<br></p>
+      <p id="conteudo-modal-second">E-CHIP COMPRADO COM SUCESSO!<br></p>
+      <p id="conteudo-modal-third">
+        EM INSTANTES VOCÊ RECEBERÁ O NÚMERO
+        E AS INSTRUÇÕES PARA ATIVÁ-LO.
+        FIQUE ATENTO A SEU E-MAIL.</p>
+    </article>
+  </div>
+</div>
 
-  <section class="modais">
-    <!-- Modal Structure -->
-    <div id="modal-login" class="modal modal-completo-login">
-      <div class="modal-topo">
-        <picture id="modal-picture">
-          <img id="imagem-topo-logo-login" src="../img/logo.svg">
-          <img id="imagem-topo-login" src="../img/close.svg" href="#!"
-            class="modal-close waves-effect waves-green btn-flat" />
-        </picture>
-      </div>
-      <div id="container-principal-login">
-        <p id="texto-login">Login</p>
-        <form name="autenticacao" class="modal-content content-modal-login" style="width: 80%; margin: auto;">
-          <input placeholder="Email" type="email" name="email" required class="input-login">
-          <input placeholder="Senha" type="password" name="senha" required class="input-login">
-          <button type="submit" id="button-login">ENTRAR</button>
-        </form>
-        <a id="ancora-login" href="">AINDA NÃO TENHO CADASTRO</a>
-      </div>
-    </div>
+<!-- Modal Structure - COMPRA NEGADA-->
+<div id="modal-compraNegada" class="modal modal-compraNeg">
+  <div class="modal-topo">
+    <img id="imagem-topo" src="../img/close.svg" href="#!" class="modal-close waves-effect waves-green btn-flat" />
+  </div>
+  <div class="modal-content content-modal-neg ">
+    <img id="imagem-modal-neg" src="../img/compraNegada.svg">
+    <article>
+      <p id="conteudo-modal-first-neg">COMPRA RECUSADA<br></p>
+      <!--      <p id= "conteudo-modal-second">E-CHIP COMPRADO COM SUCESSO!<br></p> -->
+      <p id="conteudo-modal-second-neg">
+        Poxa que triste, não podemos concluir a compra pois seu <b>CARTÃO</b> foi <b>RECUSADO</b>. Por favor entre
+        em contato com o seu banco.</p>
+    </article>
+  </div>
+</div>
+</section>
+<script type="text/javascript" src="../js/open-modal.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
 
-    <!-- Modal Structure -->
-    <div id="modal-confirm" class="modal modal-completo">
-      <div class="modal-topo">
-        <img id="imagem-topo" src="../img/close.svg" href="#!" class="modal-close waves-effect waves-green btn-flat" />
-      </div>
-      <div class="modal-content content-modal ">
-        <img id="imagem-modal" src="../img/confirmacao.svg">
-        <article>
-          <p id="conteudo-modal-first">OBRIGADA!<br></p>
-          <p id="conteudo-modal-second">E-CHIP COMPRADO COM SUCESSO!<br></p>
-          <p id="conteudo-modal-third">
-            EM INSTANTES VOCÊ RECEBERÁ O NÚMERO
-            E AS INSTRUÇÕES PARA ATIVÁ-LO.
-            FIQUE ATENTO A SEU E-MAIL.</p>
-        </article>
-      </div>
-    </div>
-
-    <!-- Modal Structure -->
-    <div id="modal-compraNegada" class="modal modal-compraNeg">
-      <div class="modal-topo">
-        <img id="imagem-topo" src="../img/close.svg" href="#!" class="modal-close waves-effect waves-green btn-flat" />
-      </div>
-      <div class="modal-content content-modal-neg ">
-        <img id="imagem-modal-neg" src="../img/compraNegada.svg">
-        <article>
-          <p id="conteudo-modal-first-neg">COMPRA RECUSADA<br></p>
-          <!--      <p id= "conteudo-modal-second">E-CHIP COMPRADO COM SUCESSO!<br></p> -->
-          <p id="conteudo-modal-second-neg">
-            Poxa que triste, não podemos concluir a compra pois seu <b>CARTÃO</b> foi <b>RECUSADO</b>. Por favor entre
-            em contato com o seu banco.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-  <script type="text/javascript" src="../js/open-modal.js"></script>
-  <script type="text/javascript" src="../js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>
