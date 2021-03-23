@@ -3,33 +3,36 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/pgMod.css">
-    <link rel="stylesheet" href="../css/modelLogin.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/pgMod.css">
+  <link rel="stylesheet" href="../css/modelLogin.css">
 
-    <!-- CSS DO INDEX + CSS PARA RESPONSIVO -->
-    <!-- Desktop -->
-    <link rel="stylesheet" href="../css/confirm-recarg-min-1024.css" media="screen and (min-width:1024px)" type="text/css" />
-    <!-- Tablet -->
-    <link rel="stylesheet" href="../css/confirm-recarg-min-max.css" media="only screen and (min-width: 768px) and (max-width: 1023px)" type="text/css" />
-    <!-- Celular -->
-    <link rel="stylesheet" href="../css/confirm-recarg-max-767.css" media="screen and (max-width:767px)" type="text/css" />
+  <!-- CSS DO INDEX + CSS PARA RESPONSIVO -->
+  <!-- Desktop -->
+  <link rel="stylesheet" href="../css/confirm-recarg-min-1024.css" media="screen and (min-width:1024px)"
+    type="text/css" />
+  <!-- Tablet -->
+  <link rel="stylesheet" href="../css/confirm-recarg-min-max.css"
+    media="only screen and (min-width: 768px) and (max-width: 1023px)" type="text/css" />
+  <!-- Celular -->
+  <link rel="stylesheet" href="../css/confirm-recarg-max-767.css" media="screen and (max-width:767px)"
+    type="text/css" />
 
-    <!-- Fontes utilizadas -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <!-- Fontes utilizadas -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;500;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
-    <!-- Biblioteca Materealize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+  <!-- Biblioteca Materealize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 </head>
 
@@ -38,66 +41,66 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-nav">
-            <nav class="sidenav-trigger">
-                <div class="nav-wrapper">
-                    <div class="container-nav">
+  <header>
+    <div class="header-nav">
+      <nav class="sidenav-trigger">
+        <div class="nav-wrapper">
+          <div class="container-nav">
 
-                        <img src="../img/logo-easyc.svg" id="logo" class="brand-logo"></img>
+            <img src="../img/logo-easyc.svg" id="logo" class="brand-logo"></img>
 
-                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img
-                                    src="../img/menu-responsive.svg" id="menu-responsive" alt"menu-hamburguer"></i></a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="index.html#click-recarga">recarga</a></li>
-                            <li><a href="index.html#click-echip">e-chip</a></li>
-                            <li><a href="index.html#click-quemSomos">quem somos</a></li>
-                            <li><a href="" data-target="modal-login" class="modal-trigger">login</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img
+                  src="../img/menu-responsive.svg" id="menu-responsive" alt"menu-hamburguer"></i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html#click-recarga">recarga</a></li>
+              <li><a href="index.html#click-echip">e-chip</a></li>
+              <li><a href="index.html#click-quemSomos">quem somos</a></li>
+              <li><a href="" data-target="modal-login" class="modal-trigger">login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Menu de navegação responsivo -->
+    <ul class="sidenav right" id="mobile-demo">
+      <li><a class="sidenav-trigger" href="index.html#click-recarga">RECARGA</a></li>
+      <li><a class="sidenav-trigger" href="index.html#click-echip">E-CHIP</a></li>
+      <li><a class="sidenav-trigger" href="index.html#click-quemSomos">QUEM SOMOS</a></li>
+      <li><a href="" data-target="modal-login" class="modal-trigger">LOGIN</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="secao_corpo_principalConfirmRecarga">
+      <p id="texto-recarga">Agora é só confirmar os dados</p>
+      <div class="container-principalConfirmRecarga">
+
+        <div class="corpo__principalConfirmRecarga">
+
+          <div class="container_principalConfirmRecarga">
+            <label class="items_labelConfirmRecarga" id="recarga">R$</label>
+            <label class="items_labelConfirmRecarga" id="numero_telefone">Telefone</label>
+            <label class="items_labelConfirmRecarga" id="cartao_numero">Cartão</label>
+            <label class=" items_labelConfirmRecarga" id="validade_cartao">Validade</label>
+            <button class="btn modal-trigger" id="button_final_ConfirmRecarga" data-target="modal-confirm">FINALIZAR
+              RECARGA</button>
+          </div>
+
         </div>
 
-        <!-- Menu de navegação responsivo -->
-        <ul class="sidenav right" id="mobile-demo">
-            <li><a class="sidenav-trigger" href="index.html#click-recarga">RECARGA</a></li>
-            <li><a class="sidenav-trigger" href="index.html#click-echip">E-CHIP</a></li>
-            <li><a class="sidenav-trigger" href="index.html#click-quemSomos">QUEM SOMOS</a></li>
-            <li><a href="" data-target="modal-login" class="modal-trigger">LOGIN</a></li>
-        </ul>
-    </header>
+        <picture class="pictureConfirmRecarga">
+          <img id="img_corpo__principalConfirmRecarga" src="../img/Mask Group.svg">
+        </picture>
+      </div>
+    </section>
+  </main>
 
-    <main>
-        <section class="secao_corpo_principalConfirmRecarga">
-          <p id="texto-recarga">Agora é só confirmar os dados</p>
-            <div class="container-principalConfirmRecarga">
-
-              <div class="corpo__principalConfirmRecarga">
-
-                <div class="container_principalConfirmRecarga">
-                  <label class="items_labelConfirmRecarga" id="recarga">R$</label>
-                  <label class="items_labelConfirmRecarga">Telefone</label>
-                  <label class="items_labelConfirmRecarga">Cartão</label>
-                  <label class="items_labelConfirmRecarga">Validade</label>
-                  <button class="btn modal-trigger" id="button_final_ConfirmRecarga" data-target="modal-compraNegada">FINALIZAR
-                    RECARGA</button>
-                </div>
-
-              </div>
-
-              <picture class="pictureConfirmRecarga">
-                <img id="img_corpo__principalConfirmRecarga" src="../img/Mask Group.svg">
-              </picture>
-            </div>
-          </section>
-    </main>
-
-    <footer>
-        <div class="container-footer">
-            <img src="../img/logo-easyc.svg" alt="" class="imgFooter">
-        </div>
-    </footer>
+  <footer>
+    <div class="container-footer">
+      <img src="../img/logo-easyc.svg" alt="" class="imgFooter">
+    </div>
+  </footer>
 
   <!-- Modal Trigger -->
 
@@ -125,23 +128,22 @@
     <!-- Modal Structure - COMPRA CONFIRMADA-->
     <div id="modal-confirm" class="modal modal-completo">
       <div class="modal-topo">
-        <img id="imagem-topo" src="../img/close.svg" href="#!" class="modal-close waves-effect waves-green btn-flat" />
+        <a href="./index.html"><img id="imagem-topo" src="../img/close.svg"
+            class="modal-close waves-effect waves-green btn-flat" /></a>
       </div>
       <div class="modal-content content-modal ">
         <img id="imagem-modal" src="../img/confirmacao.svg">
         <article>
           <p id="conteudo-modal-first">OBRIGADA!<br></p>
-          <p id="conteudo-modal-second">E-CHIP COMPRADO COM SUCESSO!<br></p>
+          <p id="conteudo-modal-second">RECARGA EFETUADA COM SUCESSO<br></p>
           <p id="conteudo-modal-third">
-            EM INSTANTES VOCÊ RECEBERÁ O NÚMERO
-            E AS INSTRUÇÕES PARA ATIVÁ-LO.
-            FIQUE ATENTO A SEU E-MAIL.</p>
+            EM INSTANTES SUA RECARGA SERÁ ATIVADA PARA SEU USO.</p>
         </article>
       </div>
     </div>
 
     <!-- Modal Structure - COMPRA NEGADA-->
-    <div id="modal-compraNegada" class="modal modal-compraNeg">
+    <!--  <div id="modal-compraNegada" class="modal modal-compraNeg">
       <div class="modal-topo">
         <img id="imagem-topo" src="../img/close.svg" href="#!" class="modal-close waves-effect waves-green btn-flat" />
       </div>
@@ -150,16 +152,17 @@
         <article>
           <p id="conteudo-modal-first-neg">COMPRA RECUSADA<br></p>
           <!--      <p id= "conteudo-modal-second">E-CHIP COMPRADO COM SUCESSO!<br></p> -->
-          <p id="conteudo-modal-second-neg">
+    <!-- <p id="conteudo-modal-second-neg">
             Poxa que triste, não podemos concluir a compra pois seu <b>CARTÃO</b> foi <b>RECUSADO</b>. Por favor entre
             em contato com o seu banco.</p>
         </article>
-      </div>
-    </div>
+      </div> -->
+
   </section>
   <script type="text/javascript" src="../js/open-modal.js"></script>
-  <script type="text/javascript" src="../js/script.js"></script>
-  
+  <script type="text/javascript" src="../js/confirm-recarga.js">
+  </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
