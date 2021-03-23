@@ -16,12 +16,11 @@
   }
   #texto-ConfirmChip{
     position: absolute;
-    width: 90%;
-    padding: 15px;
+    width: 85%;
     font-size: 25px;
     color:#F8798A;
     font-weight: bold;
-    line-height: 45px;
+    line-height: 30px;
     font-family: 'Spartan', sans-serif;
     margin-top: 15%;
   }
@@ -75,6 +74,7 @@
     font-weight: 1000;
     border-radius: 50px;
     font-size: 20px;
+    line-height: 25px;
   }
 
   #button_final_ConfirmChip:hover{

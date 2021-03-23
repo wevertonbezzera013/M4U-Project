@@ -17,6 +17,20 @@
     display: flex;
     justify-content: center;
   }
+
+  #texto-recarga{
+    position: absolute;
+    width: 80%;
+    font-size: 20px;
+    color: #609FA0;
+    left: 15%;
+    font-weight: bold;
+    line-height: 30px;
+    font-family: 'Spartan', sans-serif;
+    margin-top: 15%;
+    
+  }
+
   .container-principalConfirmRecarga{
     display: flex;
     flex-direction: column;
@@ -31,7 +45,7 @@
     font-weight: 800;
     background-color: #FFFFFF;
     border-radius: 50px;
-    margin-top: 15%;
+    margin-top: 40%;
   }
 
   .container_principalConfirmRecarga{
@@ -76,6 +90,7 @@
     width: auto;
     text-align: center;
     height: auto;
+    margin-top: 10%;
 }
  #img_corpo__principalConfirmRecarga {
   /*   position: relative; */

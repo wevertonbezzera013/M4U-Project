@@ -12,6 +12,20 @@
     padding: 30px 10px 0 px;
     display: flex;
   }
+
+  #texto-recarga{
+    position: absolute;
+    width: 50%;
+    font-size: 35px;
+    color: #609FA0;
+    left: 9%;
+    font-weight: bold;
+    line-height: 45px;
+    font-family: 'Spartan', sans-serif;
+    margin-top: 15%;
+    
+  }
+
   .container-principalConfirmRecarga{
     width: 100%;
     display: flex;
@@ -19,6 +33,7 @@
     height: auto;
     justify-content: center;
     align-items: center;
+    margin-top: 15%;
   }
   .corpo__principalConfirmRecarga{
     border-radius: 0px;
