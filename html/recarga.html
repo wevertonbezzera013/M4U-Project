@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="../css/pgMod.css">
   <link rel="stylesheet" href="../css/recarga.css">
   <link rel="stylesheet" href="../css/modelLogin.css">
+  <!-- Desktop -->
+  <!-- <link rel="stylesheet" href="../css/recarga-modal-min-1024.css" media="screen and (min-width:1024px)"
+    type="text/css" /> -->
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -155,6 +158,37 @@
         <a id="ancora-login" href="">AINDA NÃO TENHO CADASTRO</a>
       </div>
     </div>
+
+    <!-- Modal Structure Confirmação -->
+    <div id="modal-confirm" class="modal modal-completo">
+      <div class="modal-topo">
+        <a href="./index.html"><img id="imagem-topo" src="../img/close.svg"
+            class="modal-close waves-effect waves-green btn-flat" /></a>
+      </div>
+      <div class="modal-content content-modal ">
+        <img id="imagem-modal" src="../img/confirmacao.svg">
+        <article>
+          <p id="conteudo-modal-first">OBRIGADA!<br></p>
+          <p id="conteudo-modal-second">RECARGA EFETUADA COM SUCESSO<br></p>
+          <p id="conteudo-modal-third">
+            EM INSTANTES SUA RECARGA SERÁ ATIVADA PARA SEU USO.</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- Modal Structure - COMPRA NEGADA-->
+    < <div id="modal-compraNegada" class="modal modal-compraNeg">
+      <div class="modal-topo">
+        <img id="imagem-topo" src="../img/close.svg" href="#!" class="modal-close waves-effect waves-green btn-flat" />
+      </div>
+      <div class="modal-content content-modal-neg ">
+        <img id="imagem-modal-neg" src="../img/compraNegada.svg">
+        <article>
+          <p id="conteudo-modal-first-neg">COMPRA RECUSADA<br></p>
+          <!--      <p id= "conteudo-modal-second">E-CHIP COMPRADO COM SUCESSO!<br></p> -->
+          <p id="conteudo-modal-second-neg"></p>
+        </article>
+      </div>
   </section>
 
   <!-- Script do materialize para a nav bar -->
