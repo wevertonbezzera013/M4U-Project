@@ -19,7 +19,25 @@
   <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
 
-    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>  
+    
+    
+    <!-- Biblio materialize para select -->
+  <link rel = "stylesheet"
+  href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel = "stylesheet"
+  href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+<script type = "text/javascript"
+  src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+</script> 
+
+<script>
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+</script>
 
    </head>
 
@@ -76,6 +94,17 @@
                 </div>
                 <!-- NOME DO TITULAR DO CARTAO -->
                 <input type="text" name="titularCartao" class="labelTelefone input-recarga" placeholder="Nome Impresso no Cartão" required>
+
+                <!-- BANDEIRA DO CARTÃO -->
+                <div class="input-field col s12 input-recarga">
+                  <select>
+                    <option value="" disabled selected>Escolha a bandeira do Cartão</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="visa">Visa</option>
+                    <option value="elo">Elo</option>
+                  </select>
+                </div>
+
                 <!-- NUMERO DO CARTAO -->
                 <input type="text" name="numeroCartao" class="labelTelefone input-recarga" placeholder="Numero do Cartão" required>
                 <!-- MES/ANO EXPIRACAO + CÓDIGO DE SEGURANÇA-->
@@ -138,7 +167,7 @@
 
   <!-- Script dos modais -->
     <script type="text/javascript" src="../js/open-modal.js"></script>
-    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/recarga.js"></script>
 
     <!-- Script Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

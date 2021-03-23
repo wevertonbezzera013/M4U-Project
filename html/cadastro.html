@@ -23,6 +23,25 @@
   <script defer type="text/javascript" src="../js/pesquisa-cep.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
+<!-- Biblio materialize para select -->
+  <link rel = "stylesheet"
+  href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel = "stylesheet"
+  href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+<script type = "text/javascript"
+  src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+</script> 
+
+<script>
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+</script>
+
+
+
 </head>
 
 <title>Cadastro</title>
@@ -68,6 +87,7 @@
         <form name="registro">
           <!-- NOME -->
           <input type="text" name="nome" class="items_label imputCadastro" placeholder="Nome Completo" required>
+
           <!-- EMAIL -->
           <input type="email" name="email" class="imputCadastro" placeholder="E-mail" required>
           <!-- CEP/Estado/Cidade -->
@@ -106,6 +126,17 @@
           <!-- NOME DO TITULAR DO CARTAO -->
           <input type="text" name="titularCartao" class="items_label imputCadastro"
             placeholder="Nome Impresso no Cartão" required>
+
+            <!-- BANDEIRA DO CARTÃO -->
+          <div class="input-field col s12 imputCadastro">
+            <select>
+              <option value="" disabled selected>Escolha a bandeira do Cartão</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="visa">Visa</option>
+              <option value="elo">Elo</option>
+            </select>
+          </div>
+
           <!-- NUMERO DO CARTAO -->
           <input type="text" name="numeroCartao" class="items_label imputCadastro" placeholder="Numero do Cartão"
             required>

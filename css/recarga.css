@@ -1,6 +1,8 @@
 main {
     background-color: #FFEEF0;
   }
+
+  
   
   .img_recarga{
     width: 30%;
@@ -116,6 +118,10 @@ form{
 
   #buttonFormRecarga:hover{
     background-color: #547676;
+  }
+
+  .character-counter{
+    display: none;
   }
  
 

@@ -15,6 +15,8 @@ main {
     line-height: 155.8%;
     color: #F8798A;
   }
+
+  
   
   .secao_corpo_principal_cadastro{
     vertical-align: bottom;
@@ -95,6 +97,7 @@ form{
     width: 65%;
   }
 
+
   .textoForm{
       font-family: 'Spartan';
       font-size: 18px;
@@ -131,7 +134,11 @@ form{
   #img_corpo__form{
     width: 30%;
     margin-right: 3%;
-    
+    margin-top: 15%;
+  }
+
+  .character-counter{
+    display: none;
   }
 
   /* MEDIA QUERIES */
@@ -290,6 +297,7 @@ form{
   margin-bottom: -2%;
   width: 25px;
 }
+
 
 ::placeholder {
   color: white !important;
