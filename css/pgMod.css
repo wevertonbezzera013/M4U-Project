@@ -1,30 +1,31 @@
 /* HEADER*/
 
-.header-nav{
-  position:fixed;
+.header-nav {
+  position: fixed;
   width: 100%;
   top: 0px;
   z-index: 9;
 }
 
 
-nav{
-  background-color:#FFFFFF !important;
+nav {
+  background-color: #FFFFFF !important;
 }
-.container-nav{
+
+.container-nav {
   margin-left: 5%;
   margin-right: 5%;
   height: auto;
 }
 
-#menu-responsive{
+#menu-responsive {
   width: 50%;
   height: 50%;
   position: relative;
   left: 0%;
 }
 
-ul li a{
+ul li a {
   text-decoration: none;
   font-family: 'Spartan';
   font-size: 20px;
@@ -33,25 +34,117 @@ ul li a{
   color: #F8798A !important;
 }
 
-ul li a:hover{
+ul li a:hover {
   color: #D26A7E !important;
 }
 
+/* MODAL CONFIRM */
+.modal-completo {
+  width: 35% !important;
+  height: auto !important;
+  text-align: center;
+  border-radius: 50px !important;
+  font-family: 'Spartan', sans-serif;
+  font-weight: bold;
+}
+
+#imagem-modal {
+  width: 50% !important;
+  height: 25% !important;
+  margin-bottom: 20px;
+}
+
+.content-modal {
+  text-align: center;
+  padding-bottom: 30px !important;
+}
+
+#conteudo-modal-first {
+  font-size: 30px;
+  color: #F8798A;
+  padding-bottom: 10px;
+}
+
+#conteudo-modal-second {
+  width: auto;
+  font-size: 20px;
+  color: #000000;
+  padding: 10px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#conteudo-modal-third {
+  line-height: 25px;
+}
+
+.modal-topo {
+  /* padding: 0px !important;  */
+  margin-top: 20px !important;
+}
+
+#imagem-topo {
+  position: absolute !important;
+  right: 30px;
+  top: 30px;
+  padding: 0px;
+}
+
+/*MODAL COMPRA NEGADA*/
+#modal-compraNegada {
+  width: 25% !important;
+  height: auto !important;
+  border-radius: 50px !important;
+}
+
+#imagem-topo {
+  position: absolute;
+  right: 0px;
+  margin: 10px;
+}
+
+.content-modal-neg {
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  border-radius: 50px;
+}
+
+#imagem-modal-neg {
+  width: 25% !important;
+  height: 25% !important;
+  margin-bottom: 20px;
+}
+
+#conteudo-modal-first-neg {
+  color: #609FA0;
+  ;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+#conteudo-modal-second-neg {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
 
 /* FOOTER */
 
-footer{
+footer {
   width: 100%;
   bottom: 0;
 }
 
-.container-footer{
+.container-footer {
   background-color: #ffffff !important;
   display: flex;
   justify-content: center;
 }
 
-.imgFooter{
+.imgFooter {
   width: 150px;
   margin: 1%;
 }
@@ -63,39 +156,43 @@ footer{
     margin-top: 0px;
     width: 100%;
   }
+
   main {
     background-color: #FFEEF0;
     height: 1000px;
     top: 0px;
   }
+
   /*HEADER*/
-  .header-nav{
+  .header-nav {
     width: 100%;
-    top:0px;
+    top: 0px;
   }
 
-  #logo{
+  #logo {
     width: 100px;
     margin: 4% auto
   }
-  #menu-responsive{
+
+  #menu-responsive {
     width: 30px;
     height: 30px;
   }
+
   .container-nav {
     height: 100%;
-    display: flex ;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:stretch;
-  
+    align-items: stretch;
+
   }
 
-  .sidenav{
+  .sidenav {
     width: 50% !important;
   }
 
-  ul li a{
+  ul li a {
     text-decoration: none;
     font-family: 'Spartan';
     font-size: 10px !important;
@@ -104,76 +201,248 @@ footer{
     color: #F8798A !important;
   }
 
-  footer{
+  /* MODAL CONFIRMAÇÃO*/
+  .modal-confirmacao {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal-completo {
+    width: 90% !important;
+    height: auto !important;
+    text-align: center;
+    border-radius: 50px !important;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+  }
+
+  #imagem-modal {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  #conteudo-modal-first {
+    font-size: 20px;
+    color: #F8798A;
+    padding-bottom: 10px;
+  }
+
+  #conteudo-modal-second {
+    width: 100%;
+    font-size: 20px;
+    color: #000000;
+    padding: 10px;
+    line-height: 30px;
+  }
+
+  #conteudo-modal-third {
+    line-height: 20px;
+  }
+
+  #imagem-topo {
+    position: absolute;
+    right: 0px;
+    margin: 15px 10px;
+    padding: 5px 25px;
+  }
+
+  /*MODAL COMPRA-NEGADA*/
+  #modal-compraNegada {
+    width: 90% !important;
+    height: auto !important;
+    border-radius: 50px !important;
+
+  }
+
+  #imagem-topo {
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+  }
+
+  .content-modal-neg {
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+  }
+
+  #imagem-modal-neg {
+    width: 25% !important;
+    height: 25% !important;
+    margin-bottom: 20px;
+  }
+
+  #conteudo-modal-first-neg {
+    color: #609FA0;
+    ;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  #conteudo-modal-second-neg {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+
+  footer {
     width: 100%;
     bottom: 0;
   }
-  
-  .container-footer{
+
+  .container-footer {
     background-color: #ffffff !important;
     display: flex;
     justify-content: center;
   }
-  
-  .imgFooter{
+
+  .imgFooter {
     width: 150px;
     margin: 1%;
   }
-  
-   
-  }
-  
+
+
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-.corpo__principal{
-  border-radius: 0px;
-  text-align: center;
-  width: 80%;
-  height: 300px;
-  font-family:'Spartan', sans-serif;
-  font-weight: 800;
-  border-radius: 50px;
-}
- .container_principal{
-  margin-right: 10%;
-  width: 70%;
-  justify-content: space-around;
-} 
-#img_corpo__principal {
-  position: absolute;
-  width: auto;
-  height: 40%;
-  left:70%;
-  top: 10%;
-  margin-right: 5%;
+  .corpo__principal {
+    border-radius: 0px;
+    text-align: center;
+    width: 80%;
+    height: 300px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 800;
+    border-radius: 50px;
+  }
 
-}
-/*CORPO MAIN*/
-.items_label{
-  background-color: #609FA0;
-  border-radius: 10px;
-  width: 40%;
-  height: auto;
-  font-size: 20px;
-  color:#FFFFFF;
-  text-align: center;
-  margin-bottom: 20px;
-}
+  .container_principal {
+    margin-right: 10%;
+    width: 70%;
+    justify-content: space-around;
+  }
 
-#button_final_compra{
-  width: 90%;
-  height: auto;
-  justify-self:center;
-  margin-bottom: 5px;
-  background-color: #609FA0;
-  color:#FFFFFF;
-  border: none;
-  padding: 10px;
-  font-family:'Spartan', sans-serif;
-  font-weight: 1000;
-  border-radius: 10px;
-  font-size: 15px;
-}
+  #img_corpo__principal {
+    position: absolute;
+    width: auto;
+    height: 40%;
+    left: 70%;
+    top: 10%;
+    margin-right: 5%;
+
+  }
+
+  /*CORPO MAIN*/
+  .items_label {
+    background-color: #609FA0;
+    border-radius: 10px;
+    width: 40%;
+    height: auto;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #button_final_compra {
+    width: 90%;
+    height: auto;
+    justify-self: center;
+    margin-bottom: 5px;
+    background-color: #609FA0;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 1000;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+
+  /*MODAL CONFIRMAÇÃO*/
+  .modal-completo {
+    width: 50% !important;
+    height: auto;
+    text-align: center;
+    border-radius: 50px !important;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+  }
+
+  #imagem-modal {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  #conteudo-modal-first {
+    font-size: 30px;
+    color: #F8798A;
+    padding-bottom: 10px;
+  }
+
+  #conteudo-modal-second {
+    width: 100%;
+    font-size: 25px;
+    color: #000000;
+    padding: 10px;
+    line-height: 30px;
+  }
+
+  #conteudo-modal-third {
+    line-height: 20px;
+  }
+
+  #imagem-topo {
+    position: absolute;
+    right: 0px;
+    margin: 15px 10px;
+    padding: 0px 25px;
+  }
+
+  /*MODAL COMPRA-NEGADA*/
+  #modal-compraNegada {
+    width: 90% !important;
+    height: auto !important;
+    border-radius: 50px !important;
+    /*  background-color: coral !important; */
+  }
+
+  #imagem-topo {
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+  }
+
+  .content-modal-neg {
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+  }
+
+  #imagem-modal-neg {
+    width: 25% !important;
+    height: 25% !important;
+    margin-bottom: 20px;
+  }
+
+  #conteudo-modal-first-neg {
+    color: #609FA0;
+    ;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  #conteudo-modal-second-neg {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
 
 }
