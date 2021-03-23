@@ -33,7 +33,7 @@ main {
 
   .tituloPrincipal{
     text-align: left;
-    width: 70%;
+    width: 60%;
     height: auto;
     font-family:'Spartan', sans-serif;
     font-size: 35px;
@@ -220,7 +220,7 @@ main {
 
   .imgQuemSomos{
     width: 40%;
-    margin-top: 7%;
+    margin-top: 16%;
     margin-right: 3%;
   }
 
