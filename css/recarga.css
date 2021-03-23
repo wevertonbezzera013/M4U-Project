@@ -143,8 +143,8 @@ form{
     }
 
     .img_recarga{
-      width: 35%;
-      margin-top: 16%;
+      width: 30%;
+      margin-top: 34%;
     }
 
     form{
@@ -210,9 +210,9 @@ form{
   }
 
  .img_recarga{
-  width: 55%;
+  width: 130px;
   margin: 0 auto;
-
+  margin-top: 3%;
 }
   
   .corpo__principal_recarga{
