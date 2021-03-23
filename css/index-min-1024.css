@@ -50,9 +50,9 @@ main {
     padding:5px;
   }
 
-  #buttonValoresRecarga{
-    width:100%;
-    height: 100%;
+  .buttonValoresRecarga{
+    width:40%;
+    height: auto;
     background-color: #609FA0;
     border-radius: 100px;
     margin-bottom: 10%;
@@ -84,7 +84,7 @@ main {
     margin-top: 4%;
   }
 
-  #buttonValoresRecarga:hover{
+  .buttonValoresRecarga:hover{
     background-color: #547676;
   }
 
