@@ -32,14 +32,13 @@ botaoClick.addEventListener("click", (e) => {
 	};
 	const result = requisicaoCartao(cartaoUser)
 	.then((response) =>{
-	 const {message, code} = response;
-	 verificaResponse(message, code, cartaoUser);
-
+	const {message, code} = response;
+	verificaResponse(message, code, cartaoUser);
 	})
 	.catch((err)=>{
 		console.log(err.message);
 	})		
-	//window.location.href = "../html/confirm-recarga.html"; 
+	
 	
 });
 
@@ -59,7 +58,7 @@ const verificaResponse = (mensagem, codigo,cartaoUser) =>{
 	}
 }	
 
-const exibeModalConfirmacao = (msg) =>{
+const exibeModalConfirmacao = () =>{
 	  let elems = document.querySelector('#modal-confirm');
 		let instances = M.Modal.init(elems);
 		instances.open();
@@ -76,6 +75,10 @@ const exibeErroInterno= (msg)=>{
 		let instances = M.Modal.init(elems);
 		document.querySelector("#conteudo-modal-second-neg").innerHTML = `Poxa que triste, não podemos concluir a compra pois ocorreu um <b> ${msg.toUpperCase()} </b> Por favor entre em contato com o seu banco.`;
 		instances.open();
+}
+
+const limpaCampos = () =>{
+
 }
 
 const requisicaoCartao = async (body) => {
@@ -98,12 +101,3 @@ const requisicaoCartao = async (body) => {
 	return responseJson;
 }
 	
-		/* .then((data) => {
-			return data.json();
-		})
-		.then((response) => {
-			return response;
-		})
-		.catch((err) => {
-			console.log(err); */
-	//	});

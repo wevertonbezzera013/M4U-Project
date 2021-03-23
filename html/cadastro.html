@@ -23,22 +23,18 @@
   <script defer type="text/javascript" src="../js/pesquisa-cep.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-<!-- Biblio materialize para select -->
-  <link rel = "stylesheet"
-  href = "https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel = "stylesheet"
-  href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-<script type = "text/javascript"
-  src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
-</script> 
+  <!-- Biblio materialize para select -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+  </script>
 
-<script>
-  $(document).ready(function(){
-    $('select').formSelect();
-  });
-
-</script>
+  <script>
+    $(document).ready(function () {
+      $('select').formSelect();
+    });
+  </script>
 
 
 
@@ -93,8 +89,7 @@
           <!-- CEP/Estado/Cidade -->
           <div class="labelPequeno">
             <!-- CEP -->
-            <input id="cep" type="text" name="cep" class="labelTamanho imputCadastro" maxlength="8" placeholder="CEP"
-              required>
+            <input id="cep" type="text" name="cep" class="labelTamanho imputCadastro" placeholder="CEP" required>
             <!-- ESTADO -->
             <input id="uf" type="text" name="uf" class="labelTamanho imputCadastro" placeholder="UF" required>
             <!-- CIDADE -->
@@ -112,8 +107,7 @@
             <input type="text" name="complemento" class="labelComplemento imputCadastro" placeholder="Complemento">
           </div>
           <!-- SENHA -->
-          <input type="password" name="senha" id="inputPassword4" class="imputCadastro" maxlength="8" minlength="6"
-            placeholder="Senha" required>
+          <input type="password" name="senha" id="inputPassword4" class="imputCadastro" placeholder="Senha" required>
           <input type="password" name="confirm_senha" id="inputPassword" class="imputCadastro"
             placeholder="Confirme sua senha" required>
           <!-- Divisão Cadastro e forma de pagamento -->
@@ -127,13 +121,13 @@
           <input type="text" name="titularCartao" class="items_label imputCadastro"
             placeholder="Nome Impresso no Cartão" required>
 
-            <!-- BANDEIRA DO CARTÃO -->
+          <!-- BANDEIRA DO CARTÃO -->
           <div class="input-field col s12 imputCadastro">
-            <select>
+            <select id="bandeira_cartao" required>
               <option value="" disabled selected>Escolha a bandeira do Cartão</option>
-              <option value="mastercard">Mastercard</option>
-              <option value="visa">Visa</option>
-              <option value="elo">Elo</option>
+              <option value="MASTER">Master</option>
+              <option value="VISA">Visa</option>
+              <option value="ELO">Elo</option>
             </select>
           </div>
 
@@ -142,15 +136,14 @@
             required>
           <!-- MES/ANO EXPIRACAO + CÓDIGO DE SEGURANÇA-->
           <div class="labelPequeno">
-            <input id="cartao_expiracao" type="text" name="expiracao" placeholder="Expiração" maxlength="4"
-              class="imputCadastro" required>
-            <input type="text" name="cdSeguranca" placeholder="Código de Segurança" class="imputCadastro" maxlength="3"
-              minlength="3" required>
+            <input id="cartao_expiracao" type="text" name="expiracao" placeholder="Expiração" class="imputCadastro"
+              required>
+            <input type="text" name="cdSeguranca" placeholder="Código de Segurança" class="imputCadastro" required>
           </div>
           <!-- BOTÃO COMPRAR -->
-          <div>
-            <button type="submit" id="buttonFormCadastro">Comprar</button>
-          </div>
+
+          <button type="submit" id="buttonFormCadastro">Comprar</button>
+
         </form>
 
       </div>
@@ -186,6 +179,19 @@
         <a id="ancora-login" href="../html/cadastro.html">AINDA NÃO TENHO CADASTRO</a>
       </div>
     </div>
+    <!-- Modal Structure - COMPRA NEGADA-->
+    <div id="modal-compraNegada" class="modal modal-compraNeg">
+      <div class="modal-topo">
+        <img id="imagem-topo" src="../img/close.svg" href="#!" class="modal-close waves-effect waves-green btn-flat" />
+      </div>
+      <div class="modal-content content-modal-neg ">
+        <img id="imagem-modal-neg" src="../img/compraNegada.svg">
+        <article>
+          <p id="conteudo-modal-first-neg">COMPRA RECUSADA<br></p>
+          <!--      <p id= "conteudo-modal-second">E-CHIP COMPRADO COM SUCESSO!<br></p> -->
+          <p id="conteudo-modal-second-neg"></p>
+        </article>
+      </div>
   </section>
 
   <!-- Script do materialize para a nav bar -->
