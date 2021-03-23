@@ -1,10 +1,10 @@
-const botoes = document.querySelectorAll(".buttonValoresRecarga")
+const botoes = document.querySelectorAll(".valores");
 
-botoes.forEach((elemento)=>{
-    elemento.addEventListener("click", (e)=>{
-        e.stopPropagation()
-        window.localStorage.setItem("valor", JSON.stringify(e.target.textContent))
-        window.location.href='../html/recarga.html'
-        console.log(e.target.textContent)
-    })
-})
+botoes.forEach((elemento) => {
+	elemento.addEventListener("click", (e) => {
+	
+		window.localStorage.setItem("valor", e.target.textContent);
+	  window.location.href = "../html/recarga.html";
+		console.log(e.target.textContent);
+	});
+});
