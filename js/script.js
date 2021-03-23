@@ -1,4 +1,4 @@
-const form = document.forms.autenticacao;
+/* const form = document.forms.autenticacao;
 
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
@@ -30,4 +30,7 @@ const checkLogin = async (pessoa) => {
 		.catch((err) => {
 			console.log(err);
 		});
-};
+}; */
+/* window.localStorage.removeItem("user"); */
+/* console.log(window.localStorage.getItem("user"));*/
+console.log(window.localStorage.getItem("novoUser"));
