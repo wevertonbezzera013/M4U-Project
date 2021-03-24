@@ -16,7 +16,7 @@ module.exports = (app, bd) =>
     app.get('/usuario/:id', async (req, resp)=>{
         let parametro = req.params.id;
         try{
-            const verUsuarioId = await usuarioDAO.filtroUsuario(parametro);
+            const verUsuarioId = await usuarioDAO.recuperaEmail(parametro);
             resp.send(verUsuarioId);
         } catch {
             resp.send(erro);

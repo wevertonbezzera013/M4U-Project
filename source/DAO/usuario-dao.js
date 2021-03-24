@@ -17,11 +17,11 @@ module.exports = class UsuarioDAO
         });
     }
 
-    filtroUsuario(parametro)
+    recuperaEmail(parametro)
     {
         return new Promise((resolve, reject)=>{
-            con.query('SELECT * FROM usuario WHERE id_usuario = ?', parametro, (erro, linhas)=>{
-                if(erro) reject('Não foi possível realizar a consulta por id');
+            con.query('SELECT * FROM usuario WHERE email = ?', parametro, (erro, linhas)=>{
+                if(erro) reject('Usuário não localizado');
                 else resolve(linhas);
             });
         });
