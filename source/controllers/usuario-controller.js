@@ -4,7 +4,7 @@ module.exports = (app, bd) =>
 {
     const usuarioDAO = new UsuarioDAO(bd);
 
-    app.get('/usuarios', async (req, resp)=>{
+    app.get('/usuario', async (req, resp)=>{
         try{
             const verUsuario = await usuarioDAO.todosUsuarios();
             resp.send(verUsuario);
@@ -13,7 +13,7 @@ module.exports = (app, bd) =>
         }
     });
 
-    app.get('/usuarios/:id', async (req, resp)=>{
+    app.get('/usuario/:id', async (req, resp)=>{
         let parametro = req.params.id;
         try{
             const verUsuarioId = await usuarioDAO.recuperaEmail(parametro);
@@ -23,7 +23,7 @@ module.exports = (app, bd) =>
         }        
     });
 
-    app.post('/usuarios', async (req, resp)=>{
+    app.post('/usuario', async (req, resp)=>{
         let parametro = [req.body.nome, req.body.email, req.body.senha];
         try{
             const inserirUsuario = await usuarioDAO.insereUsuario(parametro);
