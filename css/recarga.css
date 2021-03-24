@@ -195,8 +195,84 @@ form {
     margin-top: 10%;
     margin-bottom: 2%;
     justify-content: center;
+
+  }
+
+  /* MEDIA QUERIES */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .corpo__principal_recarga {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    display: flex;
+    margin-top: 15%;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+  }
+
+  .img_recarga {
+    width: 30%;
+    margin-top: 34%;
+  }
+
+  form {
+    width: 95%;
+  }
+
+  .tituloRecarga {
+    text-align: left;
+    width: 80%;
+    height: auto;
+    margin-bottom: 5%;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 155.8%;
+    color: #609FA0;
+    text-transform: uppercase;
+  }
+
+
+  input-recarga {
+    border-radius: 100px !important;
+    box-shadow: none !important;
+    background-color: #609FA0 !important;
+    color: white;
+    font-family: 'Spartan';
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  ::placeholder {
+    color: white !important;
+    padding: 5%;
+    font-family: 'Spartan';
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .imgCartaoRecarga {
+    width: 10%;
+    margin-bottom: -1%;
+  }
+
+  .textoFormRecarga {
+    font-family: 'Spartan';
+    font-size: 16px;
+    font-weight: 800;
+    color: #609FA0;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    justify-content: center;
   }
 }
+
 
 @media only screen and (max-width:767px) {
   .secao_corpo_principal_recarga1 {
@@ -212,6 +288,13 @@ form {
     width: 55%;
     margin: 0 auto;
 
+  }
+
+
+  .img_recarga {
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 3%;
   }
 
   .corpo__principal_recarga {
@@ -277,7 +360,4 @@ form {
     font-size: 14px;
     font-weight: 800;
   }
-
-
-
 }

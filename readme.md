@@ -73,7 +73,7 @@ Nós usamos [GitHub](https://github.com/) para controle de versão. Para as vers
 
 ### 💻 Sitemap
 <p align="center">
-    <img src="" width="400" height="auto">
+    <img src="./img-readme/siteMap.png" width="400" height="auto">
 </p><br>
 
 
@@ -85,7 +85,7 @@ Nós usamos [GitHub](https://github.com/) para controle de versão. Para as vers
 
 💻**Juliete Freitas** - *FullStack* - [GitHub](https://github.com/julietefreitas) - [Linkedin](https://www.linkedin.com/in/juliete-freitas/)
 
-💻 **Samantha Bianchi** - *Desing / Front-end* - [GitHub](https://github.com/SahBianchi) - [Linkedin](https://www.linkedin.com/in/sahbianchi/)
+💻 **Samantha Bianchi** - *Design / Front-end* - [GitHub](https://github.com/SahBianchi) - [Linkedin](https://www.linkedin.com/in/sahbianchi/)
 
 💻 **Weverton Bezerra** - *Front-end* - [GitHub](https://github.com/wevertonbezzera013) - [Linkedin](https://www.linkedin.com/in/weverton-bezerra-da-costa-061ab11a4/)
 
