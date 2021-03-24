@@ -11,7 +11,6 @@ formulario.addEventListener("submit", (e) => {
 		numeroCartao,
 		expiracao,
 		cdSeguranca,
-		numeroEasyC,
 	} = formulario;
 
 	const select = document.getElementById("bandeira_cartao");
@@ -36,8 +35,6 @@ formulario.addEventListener("submit", (e) => {
 	const result = userModel.checkPassword(senha, confirm_senha);
 	if (!result) {
 	} else {
-		console.log("aaaa");
-		console.log(cartaoUserCadastro)
 		requisicaoCartao(cartaoUserCadastro)
 		.then((response) =>{
 			console.log(response)
@@ -47,11 +44,9 @@ formulario.addEventListener("submit", (e) => {
 		.catch((err)=>{
 			console.log(err.message);
 			})
+
 	}
 });
-		/* userController.controllerUser();
-		window.location.href = "../html/confirm-chip.html"*/
-
 		const verificaResponse = (mensagem, codigo,cartaoUserCadastro) =>{
 			if(codigo == "EXPIREDDATE"){
 				exibeModalNegCompra(mensagem);	
@@ -60,14 +55,72 @@ formulario.addEventListener("submit", (e) => {
 			}else if (codigo == "INTERNAL") {
 				exibeErroInterno(mensagem);
 			}else {
+				userController.controleDeUsuario();
 				setTimeout(()=>{
 					window.localStorage.setItem("cartaoFormulario", JSON.stringify(cartaoUserCadastro));
 					window.location.href = "../html/confirm-chip.html";
-				},3000)
+				},3000) 
+			}
+		}
+  
+		class userController {
+			static controleDeUsuario() {
+				console.log("Controller")
+				userModel.modelaUsuario();
+			}
+			static insereUsuarioNoBanco(){
 				
 			}
 		}
+		
+		class userModel {
+			static modelaUsuario() {
+				console.log("Model")
+				const {
+					email,
+					senha,
+					nome,
+				} = formulario;
+		
+				const pessoa = {
+					email: email.value,
+					nome: nome.value,
+					senha: senha.value,
+				};
+				requisicaoBanco(pessoa);
+			}
+			static checkPassword(password, confirmPassword) {
+				console.log(confirmPassword, password);
+				if (password.value !== confirmPassword.value) {
+					confirmPassword.setCustomValidity("Senhas não coincidem");
+					confirmPassword.reportValidity();
+					password.value ="";
+					confirmPassword.value= "";
+					return false;
+				} else {
+					confirmPassword.setCustomValidity("");
+					return true;
+				}
+			}
+		}
 
+		const requisicaoBanco = async (usuario) =>{
+			await fetch("https://easyc-bd.herokuapp.com/usuario", {
+			method: "POST",
+			headers: { Accept: "application/json", "Content-Type": "application/json" },
+			body: JSON.stringify(usuario),
+			mode: "cors",
+			cache: "default",
+		})
+			.then((data) => {
+				return data;
+			})
+			.catch((err) => {
+				console.log(err);
+			});}
+		
+
+				
 	const exibeModalConfirmacao = () =>{
 			let elems = document.querySelector('#modal-confirm');
 			let instances = M.Modal.init(elems);
@@ -86,70 +139,6 @@ formulario.addEventListener("submit", (e) => {
 			document.querySelector("#conteudo-modal-second-neg").innerHTML = `Poxa que triste, não podemos concluir a compra pois ocorreu um <b> ${msg.toUpperCase()} </b> Por favor entre em contato com o seu banco.`;
 			instances.open();
 	}
-
-class userController {
-	static controllerUser() {
-		userModel.modelaUsuario();
-	}
-}
-
-class userModel {
-	static modelaUsuario() {
-		const {
-			email,
-			senha,
-			nome,
-			cep,
-			uf,
-			cidade,
-			rua,
-			bairro,
-			numero,
-		} = formulario;
-
-		const pessoa = {
-			email: email.value,
-			nome: nome.value,
-			senha: senha.value,
-			cep: cep.value.replace("-", ""),
-			uf: uf.value,
-			cidade: cidade.value,
-			rua: rua.value,
-			bairro: bairro.value,
-			numero: numero.value,
-			numeroTelefone: "+55" + sorteiaNumero(),
-		};
-		console.log(pessoa);
-	}
-	static checkPassword(password, confirmPassword) {
-		console.log(confirmPassword, password);
-		if (password.value !== confirmPassword.value) {
-			confirmPassword.setCustomValidity("Senhas não coincidem");
-			confirmPassword.reportValidity();
-			password.value ="";
-			confirmPassword.value= "";
-			return false;
-		} else {
-			confirmPassword.setCustomValidity("");
-			return true;
-		}
-	}
-}
-
-let arrayNumerosTelefonicos = ["21999994596", "219658485962"];
-const mascaraNumero = (value, pattern) => {
-	let i = 0;
-	const v = value.toString();
-	return pattern.replace(/#/g, () => v[i++] || "");
-};
-
-const sorteiaNumero = () => {
-	const numeroSorteado = arrayNumerosTelefonicos[0];
-	arrayNumerosTelefonicos = arrayNumerosTelefonicos.splice(0, 1);
-	console.log("Array" + arrayNumerosTelefonicos);
-	//const mascara = mascaraNumero(numeroSorteado, "(##)#####-####");
-	return numeroSorteado;
-};
 
 const mascaraValidacao = (value, pattern) => {
 	let i = 0;

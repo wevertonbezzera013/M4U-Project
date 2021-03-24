@@ -51,3 +51,5 @@ recarga.innerHTML = valor;
 telefone.innerHTML = mascaraNumero(msisdn.slice(2, 13), "(##)#####-####");
 cartao.innerHTML = mascaraNumeroCartao(number);
 validade.innerHTML = mascaraValidacao(expirationDate, "##/##");
+window.localStorage.removeItem("valor");
+window.localStorage.removeItem("cartao");

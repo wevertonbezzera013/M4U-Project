@@ -1,219 +1,221 @@
 main {
-    background-color: #EFFAF9;
-    padding-top: 8%;
-    height: auto;
-  }
+  background-color: #EFFAF9;
+  padding-top: 8%;
+  height: auto;
+}
 
-  .tituloForm{
-    text-align: left;
-    width: 40%;
-    height: auto;
-    margin-left: 10%;
-    font-family:'Spartan', sans-serif;
-    font-weight: 900;
-    font-size: 35px;
-    line-height: 155.8%;
-    color: #F8798A;
-  }
+.tituloForm {
+  text-align: left;
+  width: 40%;
+  height: auto;
+  margin-left: 10%;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 155.8%;
+  color: #F8798A;
+}
 
-  
-  
-  .secao_corpo_principal_cadastro{
-    vertical-align: bottom;
-    width: 100%;
-    height: auto;
-    display:flex;
-  }
-  
-  .corpo__principal_cadastro{
-    background-color: #FFFFFF;
-    width: 50%;
-    height: auto;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    margin: 5px auto;
-  
-  }
+
+
+.secao_corpo_principal_cadastro {
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.corpo__principal_cadastro {
+  background-color: #FFFFFF;
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 40px 60px 40px;
+  margin: auto;
+
+}
 
 /* FORM */
-form{
+form {
   width: 100%;
 }
 
-  .imputCadastro{
-    border-radius: 100px !important;
-    box-shadow: none !important;
-    background-color: #F8798A !important;
-    color: white;
-    font-family: 'Spartan';
-    font-size: 16px;
+.imputCadastro {
+  border-radius: 100px !important;
+  box-shadow: none !important;
+  background-color: #F8798A !important;
+  color: white;
+  font-family: 'Spartan';
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+}
+
+::placeholder {
+  color: white !important;
+  padding: 5%;
+  font-family: 'Spartan';
+  font-size: 16px;
+  font-weight: 800;
+  text-align: start;
+}
+
+
+.labelPequeno {
+  width: 100%;
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+}
+
+.labelPequeno input {
+  margin: 0px 2px 8px !important;
+}
+
+#labelEndereco {
+  width: 100%;
+  display: flex;
+  margin: 0px 2px 8px !important;
+}
+
+#labelEndereco input {
+  margin: 0px 2px 8px !important;
+}
+
+.labelTamanho {
+  width: 90%;
+  margin: 0 2px 8px !important;
+}
+
+.labelNumero {
+  width: 30%;
+}
+
+.labelComplemento {
+  width: 65%;
+}
+
+
+.textoForm {
+  font-family: 'Spartan';
+  font-size: 18px;
+  font-weight: 800;
+  color: #F8798A;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+#imgCartaoCadastro {
+  margin-bottom: -2%;
+}
+
+#buttonFormCadastro {
+  width: 100%;
+  height: 25%;
+  justify-self: center;
+  margin-bottom: 5px;
+  background-color: #F8798A;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 1000;
+  border-radius: 100px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#buttonFormCadastro:hover {
+  background-color: #D26A7E;
+}
+
+#img_corpo__form {
+  width: 30%;
+  margin-right: 3%;
+  margin-top: 15%;
+}
+
+.character-counter {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .tituloForm {
+    text-align: left;
+    width: 50%;
+    height: auto;
+    margin-left: 10%;
+    font-family: 'Spartan', sans-serif;
     font-weight: 800;
-    text-align: center;
+    font-size: 20px;
+    line-height: auto;
+    color: #F8798A;
+    margin-top: 5%;
   }
 
-  ::placeholder {
-    color: white !important;
-    padding: 5%;
-    font-family: 'Spartan';
-    font-size: 16px;
-    font-weight: 800;
-    text-align: start;
-  }
-
-
-  .labelPequeno{
+  .secao_corpo_principal_cadastro {
     width: 100%;
+    height: auto;
     display: flex;
-    direction: row;
-    justify-content: space-between;
+    flex-direction: row;
+
+    top: 50px;
+    justify-content: center;
+
   }
 
-  .labelPequeno input {
-    margin: 0px 2px 8px !important;
-  }
-
-  #labelEndereco{
-    width: 100%;
-    display: flex;
-    margin: 0px 2px 8px !important;
-  }
-  #labelEndereco input{
-    margin: 0px 2px 8px !important;
-  }
-
-  .labelTamanho{
-    width: 90%;
-    margin: 0 2px 8px !important;
-  }
-
-  .labelNumero{
-    width: 30%;
-  }
-
-  .labelComplemento{
-    width: 65%;
-  }
-
-
-  .textoForm{
-      font-family: 'Spartan';
-      font-size: 18px;
-      font-weight: 800;
-      color: #F8798A;
-      margin-top: 5%;
-      margin-bottom: 2%;
-  }
-
-  #imgCartaoCadastro{
-    margin-bottom: -2%;
-  }
-  
-  #buttonFormCadastro{
-    width: 100%;
-    height: 25%;
-    justify-self:center;
-    margin-bottom: 5px;
-    background-color: #F8798A;
-    color:#FFFFFF;
-    border: none;
-    padding: 10px;
-    font-family:'Spartan', sans-serif;
-    font-weight: 1000;
-    border-radius: 100px;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-
-  #buttonFormCadastro:hover{
-    background-color: #D26A7E;
-  }
-
-  #img_corpo__form{
-    width: 30%;
-    margin-right: 3%;
-    margin-top: 15%;
-  }
-
-  .character-counter{
-    display: none;
-  }
-
-  /* MEDIA QUERIES */
-
-  @media only screen and (min-width: 768px) and (max-width: 1023px){
-    .tituloForm{
-      text-align: left;
-      width: 50%;
-      height: auto;
-      margin-left: 10%;
-      font-family:'Spartan', sans-serif;
-      font-weight: 800;
-      font-size: 20px;
-      line-height: auto;
-      color: #F8798A;
-      margin-top: 5%;
-    }
-  
-    .secao_corpo_principal_cadastro{
-      width: 100%;
-      height: auto;
-      display:flex;
-      flex-direction: row;
-    
-      top: 50px;
-      justify-content: center;
-      
-    }
-  
-   .img_corpo__form{
+  .img_corpo__form {
     width: 50%;
     margin-top: 21%;
   }
-    
-    .corpo__principal_cadastro{
-      background-color: #FFFFFF;
-      width: 60%;
-      height: auto;
-      border-radius: 50px;
-      display: flex;
-      margin: 0 0 5% 5%;
-      padding: 3% 0 3% 0;
-    }
-  
-    form{
-      height: auto;
-      width: 90%;
-    }
-  
-    .labelPequeno{
-      width: 100%;
-      display: flex;
-      direction: column;
-      flex-wrap: wrap;
-    }
-    
-    .labelTamanho{
-      width: 100% ;
-    }
-  
-    .textoForm{
-      font-family: 'Spartan';
-      font-size: 14px;
-      font-weight: 800;
-      color: #F8798A;
-      line-height: 160%;
-      margin-top: 5%;
-      margin-bottom: 2%;
+
+  .corpo__principal_cadastro {
+    background-color: #FFFFFF;
+    width: 60%;
+    height: auto;
+    border-radius: 50px;
+    display: flex;
+    margin: 0 0 5% 5%;
+    padding: 5%;
   }
-  
-  .imgCartaoCadastro{
+
+  form {
+    height: auto;
+    width: 90%;
+  }
+
+  .labelPequeno {
+    width: 100%;
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+  }
+
+  .labelTamanho {
+    width: 100%;
+  }
+
+  .textoForm {
+    font-family: 'Spartan';
+    font-size: 14px;
+    font-weight: 800;
+    color: #F8798A;
+    line-height: 160%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+
+  .imgCartaoCadastro {
     margin-bottom: -2%;
     width: 25px;
   }
-  
+
   ::placeholder {
     color: white !important;
     padding: 5%;
@@ -221,15 +223,15 @@ form{
     font-size: 14px;
     font-weight: 800;
   }
-  }
+}
 
-  @media only screen and (max-width:767px) {
-  .tituloForm{
+@media only screen and (max-width:767px) {
+  .tituloForm {
     text-align: left;
     width: 80%;
     height: auto;
     margin-left: 10%;
-    font-family:'Spartan', sans-serif;
+    font-family: 'Spartan', sans-serif;
     font-weight: 800;
     font-size: 20px;
     line-height: auto;
@@ -237,23 +239,23 @@ form{
     margin-top: 20%;
   }
 
-  .secao_corpo_principal_cadastro{
+  .secao_corpo_principal_cadastro {
     width: 100%;
     height: auto;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     top: 50px;
     justify-content: center;
-    
+
   }
 
- #img_corpo__form{
-  width: 80%;
-  margin: 0 auto;
-}
-  
-  .corpo__principal_cadastro{
+  #img_corpo__form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .corpo__principal_cadastro {
     background-color: #FFFFFF;
     width: 80%;
     height: auto;
@@ -262,28 +264,28 @@ form{
     margin: 10px auto;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 30px 30px 50px 30px;
 
-  
+
   }
 
-  form{
+  form {
     height: auto;
     width: 100%;
   }
 
-  .labelPequeno{
+  .labelPequeno {
     width: 100%;
     display: flex;
     direction: column;
     flex-wrap: wrap;
   }
-  
-  .labelTamanho{
-    width: 100% ;
+
+  .labelTamanho {
+    width: 100%;
   }
 
-  .textoForm{
+  .textoForm {
     font-family: 'Spartan';
     font-size: 14px;
     font-weight: 800;
@@ -291,20 +293,20 @@ form{
     line-height: 160%;
     margin-top: 5%;
     margin-bottom: 2%;
-}
+  }
 
-#imgCartaoCadastro{
-  margin-bottom: -2%;
-  width: 25px;
-}
+  #imgCartaoCadastro {
+    margin-bottom: -2%;
+    width: 25px;
+  }
 
 
-::placeholder {
-  color: white !important;
-  padding: 5%;
-  font-family: 'Spartan';
-  font-size: 14px;
-  font-weight: 800;
-}
+  ::placeholder {
+    color: white !important;
+    padding: 5%;
+    font-family: 'Spartan';
+    font-size: 14px;
+    font-weight: 800;
+  }
 
 }

@@ -10,15 +10,6 @@ buttonLogin.addEventListener("click", (e) => {
 	e.preventDefault();
 	const emailVerificar = email.value;
 	const senhaVerificar = senha.value;
-	/* formaBody(emailVerificar, senhaVerificar); */
-	/* const result = checkLogin();
-	console.log(result); */
-
-	/* async function result() {
-		const resultado = await checkLogin();
-		return resultado;
-	}
-	console.log(result()); */
 	if (senhaVerificar == "1234") {
 		checkLogin();
 		setTimeout(() => {
@@ -26,26 +17,6 @@ buttonLogin.addEventListener("click", (e) => {
 		}, 5000);
 	}
 });
-/* if (email.value == arrayTeste[0] && senha.value == arrayTeste[1]) {
-		alert("Usuario identificado");
-		window.location.href = "./index.html";
-	} else {
-		alert("usuario informado incorretamente");
-		console.log(email.value, senha.value);
-		console.log(arrayTeste);
-		email.value = "";
-		senha.value = "";
-	} */
-
-/* const formaBody = (emailN, senhaN) => {
-	const body = {
-		NOME: ""
-		EMAIL: emailN,
-		SENHA: senhaN,
-	};
-	return checkLogin(body);
-};
- */
 const checkLogin = async () => {
 	const user = await fetch(
 		`https://agile-plateau-70677.herokuapp.com/usuario/${2}`,
@@ -55,7 +26,6 @@ const checkLogin = async () => {
 				Accept: "application/json",
 				"Content-Type": "application/json",
 			},
-			/* 	body: JSON.stringify(infosLogins), */
 			mode: "cors",
 			cache: "default",
 		}

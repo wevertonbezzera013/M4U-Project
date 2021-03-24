@@ -50,3 +50,4 @@ return cartaoFormatado;
 
 cartao.innerHTML = mascaraNumeroCartao(number);
 validade.innerHTML = mascaraValidacao(expirationDate, "##/##");
+window.localStorage.removeItem("cartaoFormulario")

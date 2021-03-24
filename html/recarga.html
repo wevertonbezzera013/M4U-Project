@@ -33,12 +33,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
   </script>
 
-  <script>
-    $(document).ready(function () {
-      $('select').formSelect();
-    });
-  </script>
-
 </head>
 
 <title>Recarga</title>
@@ -80,7 +74,7 @@
       <img class="img_recarga" src="../img/ilustra5.svg">
 
       <div class="corpo__principal_recarga">
-        <form id="registro_recarga">
+        <form name="registro_recarga">
 
           <h1 class="tituloRecarga">FALA AÍ! PARA QUAL O NÚMERO EasyC É A RECARGA?</h1>
           <!-- NUMERO DE CELULAR -->
@@ -101,7 +95,7 @@
 
           <!-- BANDEIRA DO CARTÃO -->
           <div class="input-field col s12 input-recarga">
-            <select id="bandeira_cartao">
+            <select id="bandeira_cartao" required>
               <option class="selectOptions" value="" disabled selected>Escolha a bandeira do Cartão</option>
               <option class="selectOptions" value="MASTER">Master</option>
               <option class="selectOptions" value="VISA">Visa</option>
@@ -114,9 +108,10 @@
             required maxlength="16">
           <!-- MES/ANO EXPIRACAO + CÓDIGO DE SEGURANÇA-->
           <div class="labelPequenoRecarga">
-            <input type="text" name="expiracao" placeholder="Expiração" class="input-recarga" required maxlength="4">
+            <input type="text" name="expiracao" placeholder="Expiração" class="input-recarga" required maxlength="4"
+              minlength="3">
             <input type="text" name="cdSeguranca" placeholder="Código de Segurança" class="input-recarga" required
-              maxlength="3">
+              maxlength="3" minlength="3">
           </div>
           <!-- BOTÃO COMPRAR -->
           <div>
@@ -155,7 +150,7 @@
           <input placeholder="Senha" type="password" name="senha" required class="input-login">
           <button type="submit" id="button-login">ENTRAR</button>
         </form>
-        <a id="ancora-login" href="">AINDA NÃO TENHO CADASTRO</a>
+        <a id="ancora-login" href="./cadastro.html">AINDA NÃO TENHO CADASTRO</a>
       </div>
     </div>
 
@@ -203,10 +198,16 @@
   <!-- Script dos modais -->
   <script type="text/javascript" src="../js/open-modal.js"></script>
   <script type="text/javascript" src="../js/recarga.js"></script>
+  <script type="text/javascript" src="../js/login.js"></script>
 
   <!-- Script Materialize -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('select').formSelect();
+    });
+  </script>
 </body>
 
 </html>
